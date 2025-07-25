@@ -82,7 +82,7 @@ export default function TradingPage() {
 
   const [newAccountName, setNewAccountName] = useState('');
   const [creatingAccount, setCreatingAccount] = useState(false);
-  const t = useTranslations();
+  const t = useTranslations('trading');
 
   const [pagination, setPagination] = useState<PaginationState>({
     currentPage: 1,
@@ -120,7 +120,7 @@ export default function TradingPage() {
     } else {
       toast({
         title: 'Error',
-        description: response.message || t('trading.errorTitle'),
+        description: response.message || t('errorTitle'),
         variant: 'destructive',
       });
     }
@@ -137,7 +137,7 @@ export default function TradingPage() {
     } else {
       toast({
         title: 'Error',
-        description: response.message || t('trading.errorTitle'),
+        description: response.message || t('errorTitle'),
         variant: 'destructive',
       });
     }
@@ -177,7 +177,7 @@ export default function TradingPage() {
     if (!newAccountName.trim()) {
       toast({
         title: 'Validation Error',
-        description: t('trading.createAccount.validationError'),
+        description: t('createAccount.validationError'),
         variant: 'destructive',
       });
       return;
@@ -194,7 +194,7 @@ export default function TradingPage() {
     if (result.success) {
       toast({
         title: 'Success',
-        description: t('trading.createAccount.successMessage'),
+        description: t('createAccount.successMessage'),
       });
 
       setNewAccountName('');
@@ -205,7 +205,7 @@ export default function TradingPage() {
     } else {
       toast({
         title: 'Error',
-        description: t('trading.createAccount.errorMessage'),
+        description: t('createAccount.errorMessage'),
         variant: 'destructive',
       });
     }
@@ -221,7 +221,7 @@ export default function TradingPage() {
     ) {
       toast({
         title: 'Validation Error',
-        description: t('trading.createTicket.validationError'),
+        description: t('createTicket.validationError'),
         variant: 'destructive',
       });
       return;
@@ -236,7 +236,7 @@ export default function TradingPage() {
     if (response.success && response.data) {
       toast({
         title: 'Success',
-        description: `${t('trading.createTicket.successMessage')} ${
+        description: `${t('createTicket.successMessage')} ${
           response.data
         }`,
       });
@@ -247,7 +247,7 @@ export default function TradingPage() {
     } else {
       toast({
         title: 'Error',
-        description: response.message || t('trading.createTicket.errorMessage'),
+        description: response.message || t('createTicket.errorMessage'),
         variant: 'destructive',
       });
     }
@@ -288,12 +288,12 @@ export default function TradingPage() {
 
   const getStatusText = (status: TicketStatus) => {
     const statusMap = {
-      0: t('trading.ticketStatus.pending'),
-      1: t('trading.ticketStatus.processing'),
-      2: t('trading.ticketStatus.completed'),
-      3: t('trading.ticketStatus.cancelled'),
-      4: t('trading.ticketStatus.failed'),
-      5: t('trading.ticketStatus.rejected'),
+      0: t('ticketStatus.pending'),
+      1: t('ticketStatus.processing'),
+      2: t('ticketStatus.completed'),
+      3: t('ticketStatus.cancelled'),
+      4: t('ticketStatus.failed'),
+      5: t('ticketStatus.rejected'),
     };
     return statusMap[status] || 'Unknown';
   };
@@ -317,8 +317,8 @@ export default function TradingPage() {
 
   const getTicketTypeText = (type: TicketType) => {
     return type === 0
-      ? t('trading.createTicket.deposit')
-      : t('trading.createTicket.withdrawal');
+      ? t('createTicket.deposit')
+      : t('createTicket.withdrawal');
   };
 
   const getTicketTypeIcon = (type: TicketType) => {
@@ -336,7 +336,7 @@ export default function TradingPage() {
           <div className='text-center'>
             <div className='animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto'></div>
             <p className='mt-2 text-muted-foreground'>
-              {t('trading.loading')}{' '}
+              {t('loading')}{' '}
             </p>
           </div>
         </div>
@@ -349,9 +349,9 @@ export default function TradingPage() {
       <div className='space-y-6'>
         <div>
           <h1 className='text-3xl font-bold tracking-tight'>
-            {t('trading.title')}
+            {t('title')}
           </h1>
-          <p className='text-muted-foreground'>{t('trading.subtitle')}</p>
+          <p className='text-muted-foreground'>{t('subtitle')}</p>
         </div>
 
         <Tabs
@@ -362,38 +362,38 @@ export default function TradingPage() {
           <TabsList className='grid w-full grid-cols-4'>
             <TabsTrigger value='accounts' className='flex items-center gap-2'>
               <Wallet className='h-4 w-4' />
-              {t('trading.tabs.accounts')}
+              {t('tabs.accounts')}
             </TabsTrigger>
             <TabsTrigger
               value='create-account'
               className='flex items-center gap-2'
             >
               <UserPlus className='h-4 w-4' />
-              {t('trading.tabs.createAccount')}
+              {t('tabs.createAccount')}
             </TabsTrigger>
             <TabsTrigger value='create' className='flex items-center gap-2'>
               <Plus className='h-4 w-4' />
-              {t('trading.tabs.create')}
+              {t('tabs.create')}
             </TabsTrigger>
             <TabsTrigger value='history' className='flex items-center gap-2'>
               <History className='h-4 w-4' />
-              {t('trading.tabs.history')}
+              {t('tabs.history')}
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value='accounts' className='space-y-6'>
             <Card>
               <CardHeader>
-                <CardTitle>{t('trading.accounts.title')}</CardTitle>
+                <CardTitle>{t('accounts.title')}</CardTitle>
                 <CardDescription>
-                  {t('trading.accounts.description')}
+                  {t('accounts.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className='space-y-4'>
                   <div className='ms-auto mt-3'>
                     <Label htmlFor='account-select' className='justify-end'>
-                      {t('trading.accounts.selectLabel')}
+                      {t('accounts.selectLabel')}
                     </Label>
                     <Select
                       value={selectedAccount}
@@ -459,20 +459,20 @@ export default function TradingPage() {
           <TabsContent value='create-account' className='space-y-6'>
             <Card>
               <CardHeader>
-                <CardTitle>{t('trading.createAccount.title')}</CardTitle>
+                <CardTitle>{t('createAccount.title')}</CardTitle>
                 <CardDescription>
-                  {t('trading.createAccount.description')}
+                  {t('createAccount.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className='space-y-4'>
                   <div>
                     <Label htmlFor='account-name' className='mb-2'>
-                      {t('trading.createAccount.nameLabel')}
+                      {t('createAccount.nameLabel')}
                     </Label>
                     <Input
                       id='account-name'
-                      placeholder={t('trading.createAccount.namePlaceholder')}
+                      placeholder={t('createAccount.namePlaceholder')}
                       value={newAccountName}
                       onChange={e => setNewAccountName(e.target.value)}
                       disabled={creatingAccount}
@@ -483,7 +483,7 @@ export default function TradingPage() {
                       }}
                     />
                     <p className='text-sm text-muted-foreground mt-1'>
-                      {t('trading.createAccount.nameHelp')}
+                      {t('createAccount.nameHelp')}
                     </p>
                   </div>
 
@@ -495,14 +495,14 @@ export default function TradingPage() {
                       <Loader2 className='h-4 w-4 mr-2 animate-spin' />
                     )}
                     {creatingAccount
-                      ? t('trading.createAccount.creating')
-                      : t('trading.createAccount.createButton')}
+                      ? t('createAccount.creating')
+                      : t('createAccount.createButton')}
                   </Button>
 
                   {tradingAccounts.length > 0 && (
                     <div className='mt-6'>
                       <h4 className='text-sm font-medium mb-3'>
-                        {t('trading.createAccount.existingAccounts')}
+                        {t('createAccount.existingAccounts')}
                       </h4>
                       <div className='space-y-2'>
                         {tradingAccounts.map(account => (
@@ -515,7 +515,7 @@ export default function TradingPage() {
                                 {account.displayName}
                               </p>
                               <p className='text-sm text-muted-foreground'>
-                                {t('trading.createAccount.account')}{' '}
+                                {t('createAccount.account')}{' '}
                                 {account.accountNumber}
                               </p>
                             </div>
@@ -527,8 +527,8 @@ export default function TradingPage() {
                               }
                             >
                               {account.status === 'Active'
-                                ? t('trading.accountStatus.active')
-                                : t('trading.accountStatus.suspended')}
+                                ? t('accountStatus.active')
+                                : t('accountStatus.suspended')}
                             </Badge>
                           </div>
                         ))}
@@ -543,16 +543,16 @@ export default function TradingPage() {
           <TabsContent value='create' className='space-y-6'>
             <Card>
               <CardHeader>
-                <CardTitle>{t('trading.createTicket.title')}</CardTitle>
+                <CardTitle>{t('createTicket.title')}</CardTitle>
                 <CardDescription>
-                  {t('trading.createTicket.description')}
+                  {t('createTicket.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className='space-y-4'>
                   <div>
                     <Label htmlFor='account-select' className='mb-2'>
-                      {t('trading.createTicket.accountLabel')}
+                      {t('createTicket.accountLabel')}
                     </Label>
                     <Select
                       value={selectedAccount}
@@ -561,7 +561,7 @@ export default function TradingPage() {
                       <SelectTrigger className='w-full'>
                         <SelectValue
                           placeholder={t(
-                            'trading.createTicket.walletPlaceholder'
+                            'createTicket.walletPlaceholder'
                           )}
                         />
                       </SelectTrigger>
@@ -576,7 +576,7 @@ export default function TradingPage() {
                   </div>
                   <div>
                     <Label htmlFor='wallet-select' className='mb-2'>
-                      {t('trading.createTicket.walletLabel')}
+                      {t('createTicket.walletLabel')}
                     </Label>
                     <Select
                       value={selectedWallet}
@@ -597,7 +597,7 @@ export default function TradingPage() {
                   </div>
                   <div>
                     <Label htmlFor='ticket-type' className='mb-2'>
-                      {t('trading.createTicket.typeLabel')}
+                      {t('createTicket.typeLabel')}
                     </Label>
                     <Select
                       value={ticketType.toString()}
@@ -608,7 +608,7 @@ export default function TradingPage() {
                       <SelectTrigger className='w-full'>
                         <SelectValue
                           placeholder={t(
-                            'trading.createTicket.typePlaceholder'
+                            'createTicket.typePlaceholder'
                           )}
                         />
                       </SelectTrigger>
@@ -616,13 +616,13 @@ export default function TradingPage() {
                         <SelectItem value='0'>
                           <div className='flex items-center gap-2'>
                             <TrendingUp className='h-4 w-4 text-green-600' />
-                            {t('trading.createTicket.deposit')}
+                            {t('createTicket.deposit')}
                           </div>
                         </SelectItem>
                         <SelectItem value='1'>
                           <div className='flex items-center gap-2'>
                             <TrendingDown className='h-4 w-4 text-red-600' />
-                            {t('trading.createTicket.withdrawal')}
+                            {t('createTicket.withdrawal')}
                           </div>
                         </SelectItem>
                       </SelectContent>
@@ -635,7 +635,7 @@ export default function TradingPage() {
                     <Input
                       id='amount'
                       type='number'
-                      placeholder={t('trading.createTicket.amountPlaceholder')}
+                      placeholder={t('createTicket.amountPlaceholder')}
                       value={ticketAmount}
                       onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                         setTicketAmount(e.target.value)
@@ -651,8 +651,8 @@ export default function TradingPage() {
                     }
                   >
                     {creatingTicket
-                      ? t('trading.createTicket.creating')
-                      : t('trading.createTicket.createButton')}
+                      ? t('createTicket.creating')
+                      : t('createTicket.createButton')}
                   </Button>
                 </div>
               </CardContent>
@@ -662,9 +662,9 @@ export default function TradingPage() {
           <TabsContent value='history' className='space-y-6'>
             <Card>
               <CardHeader>
-                <CardTitle>{t('trading.history.title')}</CardTitle>
+                <CardTitle>{t('history.title')}</CardTitle>
                 <CardDescription>
-                  {t('trading.history.description')}
+                  {t('history.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -673,7 +673,7 @@ export default function TradingPage() {
                   <div className='flex items-center justify-between'>
                     <div className='flex items-center space-x-2'>
                       <Label htmlFor='page-size'>
-                        {t('trading.history.showLabel')}
+                        {t('history.showLabel')}
                       </Label>
                       <Select
                         value={pagination.pageSize.toString()}
@@ -690,14 +690,14 @@ export default function TradingPage() {
                         </SelectContent>
                       </Select>
                       <span className='text-sm text-muted-foreground'>
-                        {t('trading.history.entries')}
+                        {t('history.entries')}
                       </span>
                     </div>
                     {ticketsLoading && (
                       <div className='flex items-center space-x-2'>
                         <div className='animate-spin rounded-full h-4 w-4 border-b-2 border-primary'></div>
                         <span className='text-sm text-muted-foreground'>
-                          {t('trading.history.loading')}
+                          {t('history.loading')}
                         </span>
                       </div>
                     )}
@@ -706,7 +706,7 @@ export default function TradingPage() {
                     <div className='text-center py-8'>
                       <History className='h-12 w-12 text-muted-foreground mx-auto mb-4' />
                       <p className='text-muted-foreground'>
-                        {t('trading.history.noTickets')}
+                        {t('history.noTickets')}
                       </p>
                     </div>
                   ) : (
@@ -724,7 +724,7 @@ export default function TradingPage() {
                                 {ticket.amount.toFixed(2)}
                               </p>
                               <p className='text-sm text-muted-foreground'>
-                                {t('trading.history.ticketId')} {ticket.id}
+                                {t('history.ticketId')} {ticket.id}
                               </p>
                             </div>
                           </div>
@@ -745,15 +745,15 @@ export default function TradingPage() {
                   {tickets.length > 0 && (
                     <div className='flex items-center justify-between pt-4'>
                       <div className='text-sm text-muted-foreground'>
-                        {t('trading.history.showing')}{' '}
+                        {t('history.showing')}{' '}
                         {(pagination.currentPage - 1) * pagination.pageSize + 1}{' '}
-                        {t('trading.history.to')}{' '}
+                        {t('history.to')}{' '}
                         {Math.min(
                           pagination.currentPage * pagination.pageSize,
                           pagination.totalItems
                         )}{' '}
-                        {t('trading.history.of')} {pagination.totalItems}{' '}
-                        {t('trading.history.entriesText')}
+                        {t('history.of')} {pagination.totalItems}{' '}
+                        {t('history.entriesText')}
                       </div>
                       <div className='flex items-center space-x-2'>
                         <Button

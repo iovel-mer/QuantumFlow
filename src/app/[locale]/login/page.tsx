@@ -13,10 +13,13 @@ import type { LoginCredentials } from "@/app/api/types/auth"
 import { postLogin } from "@/app/api/auth/postLogin"
 import { useCredentials } from "@/hooks/use-credentials"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { useLocale, useTranslations } from "next-intl"
 
 export default function LoginPage() {
   const { storeCredentials } = useCredentials()
   const router = useRouter()
+  const t = useTranslations("login")
+  const locale = useLocale();
   const [formData, setFormData] = useState({
     emailOrUsername: "",
     password: "",
@@ -60,19 +63,26 @@ export default function LoginPage() {
     window.location.href = "/dashboard"
   }
 
+  const benefits = [
+    t("benefits.pairAccess"),
+    t("benefits.advancedTools"),
+    t("benefits.secureWallet"),
+    t("benefits.customerSupport"),
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 to-gray-800 text-gray-50 flex items-center justify-center p-4 sm:p-8">
       <div className="flex flex-col lg:flex-row w-full max-w-7xl rounded-2xl overflow-hidden shadow-2xl bg-gray-900/50 backdrop-blur-sm border border-gray-700">
         {/* Left Side - Login Form */}
         <div className="flex-1 p-8 lg:p-12 flex flex-col justify-center">
-          <Link href="/" className="inline-flex items-center text-gray-400 hover:text-blue-400 transition-colors mb-8">
+          <Link href={`/${locale}`} className="inline-flex items-center text-gray-400 hover:text-blue-400 transition-colors mb-8">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to home
+            {t("backToHome")}
           </Link>
           <Card className="w-full bg-gray-800/70 border-gray-700 text-gray-50 shadow-lg backdrop-blur-sm">
             <CardHeader className="text-center">
-              <CardTitle className="text-3xl font-bold">Sign In</CardTitle>
-              <CardDescription className="text-gray-400">Welcome back to your trading platform</CardDescription>
+              <CardTitle className="text-3xl font-bold">{t("signIn")}</CardTitle>
+              <CardDescription className="text-gray-400">{t("welcomeBack")}</CardDescription>
             </CardHeader>
             <CardContent>
               {error && (
@@ -83,7 +93,7 @@ export default function LoginPage() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="emailOrUsername" className="text-gray-300">
-                    Email or Username
+                    {t("emailOrUsername")}
                   </Label>
                   <Input
                     id="emailOrUsername"
@@ -99,7 +109,7 @@ export default function LoginPage() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="password" className="text-gray-300">
-                    Password
+                    {t("password")}
                   </Label>
                   <Input
                     id="password"
@@ -116,7 +126,7 @@ export default function LoginPage() {
                 {showTwoFactor && (
                   <div className="space-y-2">
                     <Label htmlFor="twoFactorCode" className="text-gray-300">
-                      Two-Factor Code
+                      {t("twoFactorCode")}
                     </Label>
                     <Input
                       id="twoFactorCode"
@@ -142,11 +152,11 @@ export default function LoginPage() {
                       className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-600 rounded bg-gray-700"
                     />
                     <Label htmlFor="rememberMe" className="ml-2 text-sm text-gray-400">
-                      Remember me
+                      {t("rememberMe")}
                     </Label>
                   </div>
                   <Link href="#" className="text-sm text-blue-500 hover:text-blue-400">
-                    Forgot password?
+                    {t("forgotPassword")}
                   </Link>
                 </div>
                 <Button
@@ -157,57 +167,54 @@ export default function LoginPage() {
                   {isLoading ? (
                     <div className="flex items-center justify-center">
                       <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                      Signing in...
+                      {t("signingIn")}
                     </div>
                   ) : (
-                    "Sign In"
+                    t("signIn")
                   )}
                 </Button>
               </form>
             </CardContent>
             <CardFooter className="text-center flex flex-col">
               <p className="text-gray-400">
-                {"Don't have an account? "}
+                {t("dontHaveAccount")}{" "}
                 <Link href="/register" className="text-blue-500 hover:text-blue-400 font-medium">
-                  Sign up
+                   {t("signUp")}
                 </Link>
               </p>
             </CardFooter>
           </Card>
         </div>
         {/* Right Side - Trading Benefits */}
-        <div className="flex-1 p-8 lg:p-12 bg-gray-800/60 flex flex-col justify-center border-l border-gray-700 lg:border-t-0 border-t">
-          <h2 className="text-3xl font-bold text-white mb-8">Start Trading Today</h2>
-          <div className="space-y-6">
-            {[
-              "Access to 100+ cryptocurrency trading pairs",
-              "Advanced trading tools and real-time market data",
-              "Secure wallet with industry-leading protection",
-              "24/7 customer support and educational resources",
-            ].map((benefit, index) => (
-              <div key={index} className="flex items-start space-x-3">
-                <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-0.5">
-                  <Check className="w-4 h-4 text-white" />
-                </div>
-                <p className="text-gray-300 leading-relaxed">{benefit}</p>
-              </div>
-            ))}
+       <div className="flex-1 p-8 lg:p-12 bg-gray-800/60 flex flex-col justify-center border-l border-gray-700 lg:border-t-0 border-t">
+      <h2 className="text-3xl font-bold text-white mb-8">{t("startTrading")}</h2>
+
+      <div className="space-y-6">
+        {benefits.map((benefit, index) => (
+          <div key={index} className="flex items-start space-x-3">
+            <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-0.5">
+              <Check className="w-4 h-4 text-white" />
+            </div>
+            <p className="text-gray-300 leading-relaxed">{benefit}</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 mt-8 border-t border-gray-700">
-            <div className="text-center">
-              <p className="text-gray-400 text-sm mb-1">Total Trading Volume</p>
-              <p className="text-2xl font-bold text-blue-400">$2.8B+</p>
-            </div>
-            <div className="text-center">
-              <p className="text-gray-400 text-sm mb-1">Active Traders</p>
-              <p className="text-2xl font-bold text-blue-400">500K+</p>
-            </div>
-            <div className="text-center">
-              <p className="text-gray-400 text-sm mb-1">Countries</p>
-              <p className="text-2xl font-bold text-blue-400">180+</p>
-            </div>
-          </div>
+        ))}
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 mt-8 border-t border-gray-700">
+        <div className="text-center">
+          <p className="text-gray-400 text-sm mb-1">{t("totalVolume")}</p>
+          <p className="text-2xl font-bold text-blue-400">$2.8B+</p>
         </div>
+        <div className="text-center">
+          <p className="text-gray-400 text-sm mb-1">{t("activeTraders")}</p>
+          <p className="text-2xl font-bold text-blue-400">500K+</p>
+        </div>
+        <div className="text-center">
+          <p className="text-gray-400 text-sm mb-1">{t("countries")}</p>
+          <p className="text-2xl font-bold text-blue-400">180+</p>
+        </div>
+      </div>
+    </div>
       </div>
     </div>
   )

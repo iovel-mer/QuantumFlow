@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export const Trading: React.FC = () => {
-  const t = useTranslations("trading")
+  const t = useTranslations("trade")
   const locale = useLocale();
 
   const features = [

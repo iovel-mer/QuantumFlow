@@ -39,7 +39,7 @@
     "volume": "Volumen"
   }
 ,
- "trading": {
+ "trade": {
     "badge": "Funciones de la Plataforma",
     "title": {
       "line1": "Construido para",
@@ -154,6 +154,7 @@
       }
     }
   },
+
   "help": {
     "hero": {
       "title": "Tu Centro de Productividad",
@@ -200,6 +201,235 @@
       }
     }
   },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Ya sea que tengas preguntas, comentarios o ideas de colaboración, estamos aquí para ayudarte.",
+    "general": {
+      "title": "Consultas Generales",
+      "description": "Para preguntas generales sobre nuestros servicios y empresa.",
+      "hours": "Lunes a Viernes, 9 AM – 5 PM EST"
+    },
+    "technical": {
+      "title": "Soporte Técnico",
+      "description": "Para problemas técnicos, ayuda con productos y resolución de problemas.",
+      "hours": "Disponible 24/7"
+    },
+    "partnership": {
+      "title": "Colaboraciones y Medios",
+      "description": "Para colaboraciones comerciales, prensa y medios.",
+      "hours": "Lunes a Viernes, 10 AM – 4 PM EST"
+    },
+    "form": {
+      "title": "Enviar un Mensaje",
+      "description": "Completa el formulario y te responderemos pronto.",
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "placeholder": "Elige un tema",
+      "placeholderMessage": "Escribe tu mensaje aquí...",
+      "button": "Enviar Mensaje",
+      "options": {
+        "general": "Consulta General",
+        "technical": "Soporte Técnico",
+        "billing": "Facturación",
+        "partnership": "Colaboración",
+        "other": "Otro"
+      }
+    },
+    "locations": {
+      "title": "Nuestras Ubicaciones",
+      "ny": {
+        "title": "Nueva York (HQ)",
+        "line1": "123 Avenida Tech",
+        "line2": "Nueva York, NY 10001",
+        "line3": "EE.UU."
+      },
+      "london": {
+        "title": "Londres",
+        "line1": "45 Calle Innovación",
+        "line2": "Londres EC1A 1BB",
+        "line3": "Reino Unido"
+      },
+      "singapore": {
+        "title": "Singapur",
+        "line1": "78 Camino de Silicio",
+        "line2": "Singapur 018906",
+        "line3": "Singapur"
+      }
+    },
+    "response": {
+      "title": "Tiempos de Respuesta",
+      "description": "Nuestro objetivo es responder rápidamente a cada mensaje.",
+      "chat": "Chat en Vivo",
+      "chatDetail": "Inmediato durante horas laborales",
+      "email": "Correo",
+      "emailDetail": "En 4 horas para urgencias, 24 horas para el resto",
+      "phone": "Teléfono",
+      "phoneDetail": "Tiempo de espera mínimo en horario comercial",
+      "business": "Negocios",
+      "businessDetail": "En 1 día hábil"
+    }
+  },
+  "docs": {
+    "title": "Fundamentos de las Criptomonedas",
+    "whatIs": {
+      "title": "¿Qué es una Criptomoneda?",
+      "text": "Una criptomoneda es una moneda digital o virtual que utiliza criptografía para la seguridad. Funciona en redes descentralizadas basadas en tecnología blockchain."
+    },
+    "blockchain": {
+      "title": "¿Cómo Funciona Blockchain?",
+      "text": "Un blockchain es un libro mayor distribuido que registra todas las transacciones en una red. Cada bloque contiene múltiples transacciones, y los bloques están conectados en orden cronológico."
+    },
+    "popular": {
+      "title": "Criptomonedas Populares",
+      "bitcoin": "La primera y más conocida criptomoneda.",
+      "ethereum": "Conocida por su funcionalidad de contratos inteligentes.",
+      "solana": "Una blockchain de alta velocidad para aplicaciones descentralizadas.",
+      "ripple": "Enfocada en pagos globales en tiempo real."
+    },
+    "buy": {
+      "title": "Cómo Comprar Criptomonedas",
+      "step1": "Elige un intercambio confiable (por ejemplo, Coinbase, Binance).",
+      "step2": "Crea una cuenta y verifica tu identidad.",
+      "step3": "Deposita fondos mediante transferencia bancaria o tarjeta.",
+      "step4": "Compra la criptomoneda deseada y guárdala en una billetera."
+    },
+    "tips": {
+      "title": "Consejos Importantes",
+      "tip1": "Usa siempre autenticación de dos factores (2FA).",
+      "tip2": "Guarda grandes cantidades en una billetera fría (offline).",
+      "tip3": "Investiga antes de invertir en nuevos tokens.",
+      "tip4": "Cuidado con estafas y correos de phishing."
+    }
+  },
+  "terms": {
+    "goBackHome": "Volver al inicio",
+    "title": "Términos y Condiciones",
+    "lastUpdated": "Última actualización",
+    "section1": {
+      "title": "1. Aceptación de los Términos",
+      "description": "Al acceder a nuestro sitio web o utilizar nuestros servicios, confirma su aceptación de estos Términos de uso. Si no está de acuerdo, no puede acceder ni utilizar nuestra plataforma."
+    },
+    "section2": {
+      "title": "2. Resumen de Servicios",
+      "description": "Ofrecemos herramientas digitales para ayudar a los usuarios a gestionar contenido, colaborar y optimizar flujos de trabajo. Las características específicas pueden cambiar con el tiempo."
+    },
+    "section3": {
+      "title": "3. Responsabilidades de la Cuenta",
+      "description": "Usted es responsable de mantener sus credenciales seguras. Todas las actividades bajo su cuenta son su responsabilidad. Informe de cualquier acceso no autorizado de inmediato."
+    },
+    "section4": {
+      "title": "4. Uso Aceptable",
+      "description": "Se compromete a usar nuestra plataforma respetuosamente y de manera legal. Cualquier comportamiento abusivo resultará en la terminación inmediata de su cuenta."
+    },
+    "section5": {
+      "title": "5. Términos de Pago",
+      "description": "Algunas funciones pueden requerir pago. Toda la información de facturación se muestra con transparencia. Usted es responsable de los impuestos aplicables."
+    },
+    "section6": {
+      "title": "6. Propiedad Intelectual",
+      "description": "Todo el contenido del sitio es propiedad de nuestro equipo y no puede ser copiado ni reutilizado sin permiso."
+    },
+    "section7": {
+      "title": "7. Descargos de Responsabilidad",
+      "description": "Nuestros servicios se proporcionan 'tal cual'. No garantizamos disponibilidad y no somos responsables de pérdidas por interrupciones."
+    },
+    "section8": {
+      "title": "8. Cambios en los Términos",
+      "description": "Nos reservamos el derecho de actualizar estos términos en cualquier momento. El uso continuo de nuestra plataforma indica su aceptación."
+    }
+  }
+,
+  "Register": {
+  "backToHome": "Volver al inicio",
+  "title": "Crea tu cuenta",
+  "subtitle": "Únete a nuestra plataforma y empieza tu camino",
+  "firstName": "Nombre",
+  "firstNamePlaceholder": "Introduce tu nombre",
+  "lastName": "Apellido",
+  "lastNamePlaceholder": "Introduce tu apellido",
+  "email": "Correo electrónico",
+  "emailPlaceholder": "Introduce tu correo electrónico",
+  "username": "Nombre de usuario",
+  "usernamePlaceholder": "Elige un nombre de usuario",
+  "password": "Contraseña",
+  "passwordPlaceholder": "Introduce una contraseña segura",
+  "phoneNumber": "Número de teléfono",
+  "phoneNumberPlaceholder": "Introduce tu número de teléfono",
+  "country": "País",
+  "selectCountry": "Selecciona un país",
+  "searchCountries": "Buscar países...",
+  "noCountryFound": "No se encontró ningún país.",
+  "language": "Idioma",
+  "selectLanguage": "Selecciona un idioma",
+  "searchLanguages": "Buscar idiomas...",
+  "noLanguageFound": "No se encontró ningún idioma.",
+  "dateOfBirth": "Fecha de nacimiento",
+  "pickDate": "Selecciona una fecha",
+  "creatingAccount": "Creando cuenta...",
+  "createAccount": "Crear cuenta",
+  "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+  "signIn": "Iniciar sesión",
+  "unlockTradingPotential": "Desbloquea tu potencial de trading",
+  "benefit1": "Comisiones bajas y ejecución rápida",
+  "benefit2": "Herramientas avanzadas de trading y análisis",
+  "benefit3": "Plataforma segura con soporte 24/7",
+  "benefit4": "Acceso a un mercado global",
+  "totalTradingVolume": "Volumen total de operaciones",
+  "activeTraders": "Traders activos",
+  "countries": "Países"
+}
+,
+ "login": {
+    "backToHome": "Volver a inicio",
+    "signIn": "Iniciar sesión",
+    "signingIn": "Iniciando sesión...",
+    "welcomeBack": "Bienvenido de nuevo a tu plataforma de trading",
+    "emailOrUsername": "Correo o usuario",
+    "enterEmailOrUsername": "Introduce tu correo o nombre de usuario",
+    "password": "Contraseña",
+    "enterPassword": "Introduce tu contraseña",
+    "twoFactorCode": "Código de autenticación",
+    "enter2fa": "Introduce el código 2FA",
+    "rememberMe": "Recuérdame",
+    "forgotPassword": "Olvidaste tu contraseña?",
+    "dontHaveAccount": "No tienes una cuenta?",
+    "signUp": "Regístrate",
+    "startTrading": "Comienza a operar hoy",
+    "benefits": {
+      "pairAccess": "Acceso a más de 100 pares de criptomonedas",
+      "advancedTools": "Herramientas avanzadas y datos del mercado en tiempo real",
+      "secureWallet": "Billetera segura con protección líder en la industria",
+      "customerSupport": "Soporte 24/7 y recursos educativos"
+    },
+    "totalVolume": "Volumen total de operaciones",
+    "activeTraders": "Traders activos",
+    "countries": "Países"
+  }
+,
+
+ "sidebar": {
+    "nav": {
+      "Dashboard": "Tablero",
+      "Finance": "Finanzas",
+      "Trading": "Operaciones",
+      "My Profile": "Mi Perfil",
+      "Documents": "Documentos"
+    }
+  },
+
+  "dashheader": {
+    "dashboard": "Panel",
+    "profile": "Perfil",
+    "logOut": "Cerrar sesión",
+    "loggingOut": "Cerrando sesión...",
+    "user": "Usuario",
+    "noEmail": "Correo no disponible",
+    "loading": "Cargando...",
+    "error": "Error"
+  },
+
  "about": {
     "title": "Inspirados por la curiosidad, impulsados por el diseño",
     "subtitle": "Creamos experiencias digitales intuitivas que encantan a los usuarios y fomentan la innovación.",
@@ -602,79 +832,8 @@
       }
     }
   },
-  "login": {
-    "backToHome": "Volver al inicio",
-    "title": "Iniciar Sesión",
-    "subtitle": "Bienvenido de vuelta a tu plataforma de trading",
-    "emailOrUsername": "Email o Nombre de Usuario",
-    "emailOrUsernamePlaceholder": "Ingresa tu email o nombre de usuario",
-    "password": "Contraseña",
-    "passwordPlaceholder": "Ingresa tu contraseña",
-    "twoFactorCode": "Código de Dos Factores",
-    "twoFactorCodePlaceholder": "Ingresa código 2FA",
-    "rememberMe": "Recordarme",
-    "signingIn": "Iniciando sesión...",
-    "signIn": "Iniciar Sesión",
-    "dontHaveAccount": "¿No tienes una cuenta?",
-    "signUp": "Registrarse",
-    "rightSide": {
-      "title": "Comienza a Comerciar Hoy",
-      "feature1": "Acceso a más de 100 pares de trading de criptomonedas",
-      "feature2": "Herramientas de trading avanzadas y datos de mercado en tiempo real",
-      "feature3": "Cartera segura con protección líder en la industria",
-      "feature4": "Soporte al cliente 24/7 y recursos educativos",
-      "totalVolume": "Volumen Total de Trading",
-      "totalVolumeValue": "$2.8B+",
-      "activeTraders": "Traders Activos",
-      "activeTradersValue": "500K+",
-      "countries": "Países",
-      "countriesValue": "180+"
-    }
-  },
-  "register": {
-    "backToHome": "Volver al inicio",
-    "title": "Crear Cuenta",
-    "subtitle": "Únete a nuestra plataforma de trading hoy",
-    "firstName": "Nombre",
-    "firstNamePlaceholder": "Nombre",
-    "lastName": "Apellido",
-    "lastNamePlaceholder": "Apellido",
-    "email": "Email",
-    "emailPlaceholder": "Ingresa tu email",
-    "username": "Nombre de Usuario",
-    "usernamePlaceholder": "Elige un nombre de usuario",
-    "password": "Contraseña",
-    "passwordPlaceholder": "Crea una contraseña",
-    "phoneNumber": "Número de Teléfono",
-    "phoneNumberPlaceholder": "Ingresa tu número de teléfono",
-    "country": "País",
-    "selectCountry": "Selecciona tu país",
-    "yourLocation": "Tu Ubicación",
-    "searchCountries": "Buscar países...",
-    "noCountriesFound": "No se encontraron países",
-    "language": "Idioma",
-    "selectLanguage": "Selecciona tu idioma",
-    "searchLanguages": "Buscar idiomas...",
-    "noLanguagesFound": "No se encontraron idiomas",
-    "dateOfBirth": "Fecha de Nacimiento",
-    "creatingAccount": "Creando cuenta...",
-    "createAccount": "Crear Cuenta",
-    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
-    "signIn": "Iniciar sesión",
-    "rightSide": {
-      "title": "Comienza a Comerciar Hoy",
-      "feature1": "Acceso a más de 100 pares de trading de criptomonedas",
-      "feature2": "Herramientas de trading avanzadas y datos de mercado en tiempo real",
-      "feature3": "Cartera segura con protección líder en la industria",
-      "feature4": "Soporte al cliente 24/7 y recursos educativos",
-      "totalVolume": "Volumen Total de Trading",
-      "totalVolumeValue": "$2.8B+",
-      "activeTraders": "Traders Activos",
-      "activeTradersValue": "500K+",
-      "countries": "Países",
-      "countriesValue": "180+"
-    }
-  },
+ 
+ 
   "dashboard": {
     "title": "Panel de Control",
     "overview": "Resumen",
@@ -757,6 +916,88 @@
       "failed": "Fallido",
       "rejected": "Rechazado",
       "unknown": "Desconocido"
+    }
+  },
+  "trading": {
+    "title": "Trading",
+    "subtitle": "Gestiona tus cuentas de trading, crea tickets y ve el historial de transacciones.",
+    "loading": "Cargando datos de trading...",
+    "errorTitle": "Error al Cargar Datos de Trading",
+    "retry": "Reintentar",
+    "tabs": {
+      "accounts": "Cuentas de Trading",
+      "createAccount": "Crear Cuenta",
+      "create": "Crear Ticket",
+      "history": "Historial de Tickets"
+    },
+    "accounts": {
+      "title": "Seleccionar Cuenta de Trading",
+      "description": "Elige una cuenta para ver sus carteras y balances.",
+      "selectLabel": "Cuenta de Trading",
+      "selectPlaceholder": "Selecciona una cuenta de trading",
+      "available": "Disponible:",
+      "total": "Total:",
+      "locked": "Bloqueado:",
+      "noAccountSelected": "No hay cuenta seleccionada"
+    },
+    "createAccount": {
+      "title": "Crear Nueva Cuenta de Trading",
+      "description": "Crea una nueva cuenta de trading para comenzar a operar.",
+      "nameLabel": "Nombre de la Cuenta",
+      "namePlaceholder": "ej., Cuenta Principal de Trading",
+      "nameHelp": "Elige un nombre descriptivo para tu cuenta de trading",
+      "creating": "Creando Cuenta...",
+      "createButton": "Crear Cuenta de Trading",
+      "existingAccounts": "Cuentas Existentes",
+      "account": "Cuenta:",
+      "validationError": "Por favor ingresa un nombre de cuenta",
+      "successMessage": "¡Cuenta de trading creada exitosamente!",
+      "errorMessage": "Error al crear la cuenta de trading"
+    },
+    "createTicket": {
+      "title": "Crear Nuevo Ticket",
+      "description": "Crea un ticket de depósito o retiro para tu cuenta de trading.",
+      "accountLabel": "Cuenta de Trading",
+      "accountPlaceholder": "Selecciona una cuenta de trading",
+      "walletLabel": "Cartera",
+      "walletPlaceholder": "Selecciona una cartera",
+      "typeLabel": "Tipo de Ticket",
+      "typePlaceholder": "Selecciona el tipo de ticket",
+      "amountLabel": "Cantidad",
+      "amountPlaceholder": "Ingresa la cantidad",
+      "creating": "Creando...",
+      "createButton": "Crear Ticket",
+      "deposit": "Depósito",
+      "withdrawal": "Retiro",
+      "validationError": "Por favor selecciona una cartera e ingresa una cantidad válida",
+      "successMessage": "Ticket creado exitosamente con ID:",
+      "errorMessage": "No se pudo crear el ticket debido a fondos insuficientes. Por favor verifica tu balance e intenta de nuevo."
+    },
+    "history": {
+      "title": "Historial de Tickets",
+      "description": "Ve todos tus tickets de depósito y retiro.",
+      "showLabel": "Mostrar:",
+      "entries": "entradas",
+      "loading": "Cargando...",
+      "noTickets": "No se encontraron tickets",
+      "ticketId": "ID del Ticket:",
+      "showing": "Mostrando",
+      "to": "a",
+      "of": "de",
+      "entriesText": "entradas"
+    },
+    "ticketStatus": {
+      "pending": "Pendiente",
+      "processing": "Procesando",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "failed": "Fallido",
+      "rejected": "Rechazado",
+      "unknown": "Desconocido"
+    },
+    "accountStatus": {
+      "active": "Activo",
+      "suspended": "Suspendido"
     }
   },
   "profile": {

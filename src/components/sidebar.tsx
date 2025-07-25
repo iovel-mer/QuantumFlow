@@ -24,6 +24,7 @@ import {
 import { useUser } from "@/app/dashboard/context/user-context";
 import { useToast } from "@/hooks/use-toast";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 
 interface SidebarProps {
   className?: string;
@@ -63,6 +64,8 @@ export function Sidebar({ className }: SidebarProps) {
   const [isWebTraderLoading, setIsWebTraderLoading] = useState(false);
   const { user, openWebTrader } = useUser();
   const { toast } = useToast();
+  const t = useTranslations("sidebar")
+  const locale = useLocale();
 
   const handleWebTraderClick = async () => {
     setIsOpen(false);
@@ -84,7 +87,7 @@ export function Sidebar({ className }: SidebarProps) {
     <div className="flex h-full flex-col">
       <div className="flex items-center px-2 border-b mb-3">
         <Link
-          href="/dashboard"
+          href={`/${locale}/dashboard`} 
           className="flex h-[63px] items-center gap-2 font-semibold"
         >
           <div className="h-8 w-8 rounded-lg flex items-center justify-center">
@@ -100,7 +103,7 @@ export function Sidebar({ className }: SidebarProps) {
           return (
             <Link
               key={item.name}
-              href={item.href}
+              href={`/${locale}${item.href}`}
               onClick={() => setIsOpen(false)}
               className={cn(
                 "group flex items-center rounded-md px-3 py-2 text-sm font-medium transition-colors",
@@ -110,7 +113,7 @@ export function Sidebar({ className }: SidebarProps) {
               )}
             >
               <item.icon className="mr-3 h-4 w-4" />
-              {item.name}
+             {t(`nav.${item.name}`)}
             </Link>
           );
         })}

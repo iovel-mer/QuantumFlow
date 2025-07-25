@@ -19,9 +19,11 @@ import { getCountries } from "@/app/api/countries/getCountries"
 import { getLanguages } from "@/app/api/languages/getLanguages"
 import type { Country } from "@/app/api/types/countries"
 import type { Language } from "@/app/api/types/languages"
+import { useTranslations } from "next-intl"
 
 export default function RegisterPage() {
   const router = useRouter()
+   const t = useTranslations("Register")
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -32,7 +34,7 @@ export default function RegisterPage() {
     telephone: "",
     country: "",
     language: "",
-    dateOfBirth: "", // Stored as 'YYYY-MM-DD' string
+    dateOfBirth: "",
     source: "",
   })
   const [isLoading, setIsLoading] = useState(false)
@@ -144,16 +146,16 @@ export default function RegisterPage() {
   const dateOfBirthDate = formData.dateOfBirth ? parseISO(formData.dateOfBirth) : undefined
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-zinc-900 to-gray-950 flex flex-col lg:flex-row">
+     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-zinc-900 to-gray-950 flex flex-col lg:flex-row">
       {/* Left-side Registration Form */}
       <div className="flex-1 flex items-center justify-center p-4 sm:p-8 overflow-y-auto">
         <Card className="w-full max-w-md bg-gray-900 border-gray-800 text-gray-200 shadow-lg">
           <CardHeader className="pb-4">
             <Link href="/" className="inline-flex items-center text-gray-400 hover:text-white mb-4">
-              <ArrowLeft className="w-4 h-4 mr-2" /> Back to home
+              <ArrowLeft className="w-4 h-4 mr-2" /> {t("backToHome")}
             </Link>
-            <CardTitle className="text-3xl font-bold text-white text-center">Create Account</CardTitle>
-            <p className="text-gray-400 text-center">Join our trading platform today</p>
+            <CardTitle className="text-3xl font-bold text-white text-center">{t("title")}</CardTitle>
+            <p className="text-gray-400 text-center">{t("subtitle")}</p>
           </CardHeader>
           <CardContent>
             {error && (
@@ -165,13 +167,13 @@ export default function RegisterPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="firstName" className="text-gray-300">
-                    First Name
+                    {t("firstName")}
                   </Label>
                   <Input
                     id="firstName"
                     name="firstName"
                     type="text"
-                    placeholder="First name"
+                    placeholder={t("firstNamePlaceholder")}
                     value={formData.firstName}
                     onChange={handleInputChange}
                     disabled={isLoading}
@@ -181,13 +183,13 @@ export default function RegisterPage() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="lastName" className="text-gray-300">
-                    Last Name
+                    {t("lastName")}
                   </Label>
                   <Input
                     id="lastName"
                     name="lastName"
                     type="text"
-                    placeholder="Last name"
+                    placeholder={t("lastNamePlaceholder")}
                     value={formData.lastName}
                     onChange={handleInputChange}
                     disabled={isLoading}
@@ -198,13 +200,13 @@ export default function RegisterPage() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-gray-300">
-                  Email
+                  {t("email")}
                 </Label>
                 <Input
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder={t("emailPlaceholder")}
                   value={formData.email}
                   onChange={handleInputChange}
                   disabled={isLoading}
@@ -214,13 +216,13 @@ export default function RegisterPage() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="username" className="text-gray-300">
-                  Username
+                  {t("username")}
                 </Label>
                 <Input
                   id="username"
                   name="username"
                   type="text"
-                  placeholder="Choose a username"
+                  placeholder={t("usernamePlaceholder")}
                   value={formData.username}
                   onChange={handleInputChange}
                   disabled={isLoading}
@@ -230,13 +232,13 @@ export default function RegisterPage() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="password" className="text-gray-300">
-                  Password
+                  {t("password")}
                 </Label>
                 <Input
                   id="password"
                   name="password"
                   type="password"
-                  placeholder="Create a password"
+                  placeholder={t("passwordPlaceholder")}
                   value={formData.password}
                   onChange={handleInputChange}
                   disabled={isLoading}
@@ -246,13 +248,13 @@ export default function RegisterPage() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="phoneNumber" className="text-gray-300">
-                  Phone Number
+                  {t("phoneNumber")}
                 </Label>
                 <Input
                   id="phoneNumber"
                   name="phoneNumber"
                   type="tel"
-                  placeholder="Enter your phone number"
+                  placeholder={t("phoneNumberPlaceholder")}
                   value={formData.phoneNumber}
                   onChange={handleInputChange}
                   disabled={isLoading}
@@ -263,7 +265,7 @@ export default function RegisterPage() {
               {/* Country Selector */}
               <div className="space-y-2">
                 <Label htmlFor="country" className="text-gray-300">
-                  Country
+                  {t("country")}
                 </Label>
                 <Popover open={showCountryDropdown} onOpenChange={setShowCountryDropdown}>
                   <PopoverTrigger asChild>
@@ -274,20 +276,20 @@ export default function RegisterPage() {
                       className="w-full justify-between bg-gray-800 border-gray-700 text-white hover:bg-gray-700 hover:text-white focus:ring-purple-500"
                       disabled={isLoading}
                     >
-                      {selectedCountry ? selectedCountry.name : "Select your country"}
+                      {selectedCountry ? selectedCountry.name : t("selectCountry")}
                       <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-[--radix-popover-trigger-width] p-0 bg-gray-800 border-gray-700 text-white">
                     <Command className="bg-gray-700 text-white">
                       <CommandInput
-                        placeholder="Search countries..."
+                        placeholder={t("searchCountries")}
                         value={countrySearch}
                         onValueChange={setCountrySearch}
                         className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-500 focus:ring-purple-500"
                       />
                       <CommandList className="max-h-60 overflow-y-auto">
-                        <CommandEmpty>No country found.</CommandEmpty>
+                        <CommandEmpty>{t("noCountryFound")}</CommandEmpty>
                         <CommandGroup>
                           {filteredCountries.map((country) => (
                             <CommandItem
@@ -314,7 +316,7 @@ export default function RegisterPage() {
               {/* Language Selector */}
               <div className="space-y-2">
                 <Label htmlFor="language" className="text-gray-300">
-                  Language
+                  {t("language")}
                 </Label>
                 <Popover open={showLanguageDropdown} onOpenChange={setShowLanguageDropdown}>
                   <PopoverTrigger asChild>
@@ -326,7 +328,7 @@ export default function RegisterPage() {
                       disabled={isLoading}
                     >
                       <span className={selectedLanguage ? "text-white" : "text-gray-500"}>
-                        {selectedLanguage ? selectedLanguage.name : "Select your language"}
+                        {selectedLanguage ? selectedLanguage.name : t("selectLanguage")}
                       </span>
                       <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                     </Button>
@@ -334,13 +336,13 @@ export default function RegisterPage() {
                   <PopoverContent className="w-[--radix-popover-trigger-width] p-0 bg-gray-800 border-gray-700 text-white">
                     <Command className="bg-gray-800 text-white">
                       <CommandInput
-                        placeholder="Search languages..."
+                        placeholder={t("searchLanguages")}
                         value={languageSearch}
                         onValueChange={setLanguageSearch}
                         className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-500 focus:ring-purple-500"
                       />
                       <CommandList className="max-h-60 overflow-y-auto">
-                        <CommandEmpty>No language found.</CommandEmpty>
+                        <CommandEmpty>{t("noLanguageFound")}</CommandEmpty>
                         <CommandGroup>
                           {filteredLanguages
                             .sort((a, b) => {
@@ -380,7 +382,7 @@ export default function RegisterPage() {
               {/* Date of Birth */}
               <div className="space-y-2">
                 <Label htmlFor="dateOfBirth" className="text-gray-300">
-                  Date of Birth
+                  {t("dateOfBirth")}
                 </Label>
                 <Popover open={showDatePicker} onOpenChange={setShowDatePicker}>
                   <PopoverTrigger asChild>
@@ -393,7 +395,7 @@ export default function RegisterPage() {
                       disabled={isLoading}
                     >
                       <CalendarDays className="mr-2 size-4" />
-                      {formData.dateOfBirth ? format(dateOfBirthDate!, "PPP") : <span>Pick a date</span>}
+                      {formData.dateOfBirth ? format(dateOfBirthDate!, "PPP") : <span>{t("pickDate")}</span>}
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-auto p-0 bg-gray-800 border-gray-700 text-white">
@@ -405,7 +407,7 @@ export default function RegisterPage() {
                       captionLayout="dropdown"
                       fromYear={1900}
                       toYear={new Date().getFullYear()}
-                       className="[&_td]:text-gray-200 [&_th]:text-gray-400 [&_button]:text-gray-200 [&_button]:hover:bg-gray-700 [&_button]:focus:bg-gray-700 [&_div.rdp-day_selected]:bg-purple-600 [&_div.rdp-day_selected]:text-white [&_div.rdp-day_today]:text-purple-400 [&_select]:bg-gray-800 [&_select]:text-white [&_select]:border-gray-600 [&_select]:rounded-md [&_select]:focus:ring-purple-500"
+                      className="[&_td]:text-gray-200 [&_th]:text-gray-400 [&_button]:text-gray-200 [&_button]:hover:bg-gray-700 [&_button]:focus:bg-gray-700 [&_div.rdp-day_selected]:bg-purple-600 [&_div.rdp-day_selected]:text-white [&_div.rdp-day_today]:text-purple-400 [&_select]:bg-gray-800 [&_select]:text-white [&_select]:border-gray-600 [&_select]:rounded-md [&_select]:focus:ring-purple-500"
                     />
                   </PopoverContent>
                 </Popover>
@@ -418,17 +420,17 @@ export default function RegisterPage() {
                 {isLoading ? (
                   <div className="flex items-center justify-center">
                     <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                    Creating account...
+                    {t("creatingAccount")}
                   </div>
                 ) : (
-                  "Create Account"
+                  t("createAccount")
                 )}
               </Button>
             </form>
             <p className="text-center text-gray-400 mt-4">
-              Already have an account?{" "}
+              {t("alreadyHaveAccount")}{" "}
               <Link href="/login" className="text-purple-400 hover:text-purple-300 font-medium">
-                Sign in
+                {t("signIn")}
               </Link>
             </p>
           </CardContent>
@@ -442,14 +444,9 @@ export default function RegisterPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent"></div>
         </div>
         <div className="max-w-lg space-y-8 z-10 text-center lg:text-left">
-          <h2 className="text-4xl font-extrabold text-white mb-8 leading-tight">Unlock Your Trading Potential</h2>
+          <h2 className="text-4xl font-extrabold text-white mb-8 leading-tight">{t("unlockTradingPotential")}</h2>
           <div className="space-y-6">
-            {[
-              "Access to 100+ cryptocurrency trading pairs",
-              "Advanced trading tools and real‑time market data",
-              "Secure wallet with industry‑leading protection",
-              "24/7 customer support and educational resources",
-            ].map((benefit, idx) => (
+            {[t("benefit1"), t("benefit2"), t("benefit3"), t("benefit4")].map((benefit, idx) => (
               <div key={idx} className="flex items-start space-x-3">
                 <div className="flex-shrink-0 w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mt-0.5 shadow-md">
                   <Check className="w-4 h-4 text-white" />
@@ -460,15 +457,15 @@ export default function RegisterPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-gray-700 mt-8">
             <div className="text-center">
-              <p className="text-gray-400 text-sm mb-1">Total Trading Volume</p>
+              <p className="text-gray-400 text-sm mb-1">{t("totalTradingVolume")}</p>
               <p className="text-3xl font-bold text-purple-400">$2.8B+</p>
             </div>
             <div className="text-center">
-              <p className="text-gray-400 text-sm mb-1">Active Traders</p>
+              <p className="text-gray-400 text-sm mb-1">{t("activeTraders")}</p>
               <p className="text-3xl font-bold text-purple-400">500K+</p>
             </div>
             <div className="text-center">
-              <p className="text-gray-400 text-sm mb-1">Countries</p>
+              <p className="text-gray-400 text-sm mb-1">{t("countries")}</p>
               <p className="text-3xl font-bold text-purple-400">180+</p>
             </div>
           </div>

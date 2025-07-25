@@ -28,7 +28,7 @@ export function Header({ className }: HeaderProps) {
   const { user, loading, error } = useUser();
   const [isLoggingOut, setIsLoggingOut] = useState(false);
   const { clearCredentials } = useCredentials();
-  const t = useTranslations("header");
+  const t = useTranslations("dashheader");
 
   const handleLogout = async () => {
     try {

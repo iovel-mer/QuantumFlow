@@ -39,7 +39,7 @@
     "volume": "Volumen"
   }
 ,
- "trading": {
+ "trade": {
     "badge": "Plattformfunktionen",
     "title": {
       "line1": "Gebaut für",
@@ -200,6 +200,234 @@
       }
     }
   },
+  "contact": {
+    "title": "Kontaktiere uns",
+    "subtitle": "Ob Fragen, Feedback oder Partnerschaften – wir sind für dich da.",
+    "general": {
+      "title": "Allgemeine Anfragen",
+      "description": "Für allgemeine Fragen zu unseren Dienstleistungen und unserem Unternehmen.",
+      "hours": "Montag – Freitag, 9:00 – 17:00 Uhr EST"
+    },
+    "technical": {
+      "title": "Technischer Support",
+      "description": "Bei technischen Problemen, Produktfragen oder Störungen.",
+      "hours": "24/7 verfügbar"
+    },
+    "partnership": {
+      "title": "Partnerschaften & Medien",
+      "description": "Für geschäftliche Zusammenarbeit, Presse- und Medienanfragen.",
+      "hours": "Montag – Freitag, 10:00 – 16:00 Uhr EST"
+    },
+    "form": {
+      "title": "Nachricht senden",
+      "description": "Fülle das Formular aus und wir melden uns schnellstmöglich.",
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "placeholder": "Thema wählen",
+      "placeholderMessage": "Schreibe deine Nachricht hier...",
+      "button": "Nachricht senden",
+      "options": {
+        "general": "Allgemeine Anfrage",
+        "technical": "Technischer Support",
+        "billing": "Abrechnung",
+        "partnership": "Partnerschaft",
+        "other": "Sonstiges"
+      }
+    },
+    "locations": {
+      "title": "Unsere Standorte",
+      "ny": {
+        "title": "New York (Hauptsitz)",
+        "line1": "123 Tech Avenue",
+        "line2": "New York, NY 10001",
+        "line3": "USA"
+      },
+      "london": {
+        "title": "London",
+        "line1": "45 Innovation Street",
+        "line2": "London EC1A 1BB",
+        "line3": "UK"
+      },
+      "singapore": {
+        "title": "Singapur",
+        "line1": "78 Silicon Road",
+        "line2": "Singapur 018906",
+        "line3": "Singapur"
+      }
+    },
+    "response": {
+      "title": "Unsere Antwortzeiten",
+      "description": "Wir bemühen uns um eine schnelle Antwort auf jede Nachricht.",
+      "chat": "Live-Chat",
+      "chatDetail": "Sofort während der Arbeitszeiten",
+      "email": "E-Mail",
+      "emailDetail": "Innerhalb von 4 Stunden bei dringenden Anfragen, sonst 24 Stunden",
+      "phone": "Telefon",
+      "phoneDetail": "Minimale Wartezeit während der Bürozeiten",
+      "business": "Geschäftlich",
+      "businessDetail": "Innerhalb eines Werktags"
+    }
+  },
+  "docs": {
+    "title": "Grundlagen der Kryptowährungen",
+    "whatIs": {
+      "title": "Was ist eine Kryptowährung?",
+      "text": "Eine Kryptowährung ist eine digitale oder virtuelle Währung, die Kryptografie zur Sicherheit verwendet. Sie basiert auf dezentralen Netzwerken mit Blockchain-Technologie."
+    },
+    "blockchain": {
+      "title": "Wie funktioniert Blockchain?",
+      "text": "Eine Blockchain ist ein verteiltes Hauptbuch, das alle Transaktionen im Netzwerk aufzeichnet. Jeder Block enthält mehrere Transaktionen, und Blöcke sind chronologisch verknüpft."
+    },
+    "popular": {
+      "title": "Beliebte Kryptowährungen",
+      "bitcoin": "Die erste und bekannteste Kryptowährung.",
+      "ethereum": "Bekannt für ihre Smart-Contract-Funktionalität.",
+      "solana": "Eine schnelle Blockchain für dezentrale Apps.",
+      "ripple": "Konzentriert sich auf Echtzeit-Zahlungen weltweit."
+    },
+    "buy": {
+      "title": "Wie kauft man Kryptowährungen?",
+      "step1": "Wähle eine vertrauenswürdige Kryptobörse (z. B. Coinbase, Binance).",
+      "step2": "Erstelle ein Konto und verifiziere deine Identität.",
+      "step3": "Zahle Geld per Banküberweisung oder Karte ein.",
+      "step4": "Kaufe die gewünschte Kryptowährung und speichere sie in einer Wallet."
+    },
+    "tips": {
+      "title": "Wichtige Tipps",
+      "tip1": "Verwende immer Zwei-Faktor-Authentifizierung (2FA).",
+      "tip2": "Bewahre größere Beträge in einer Offline-Wallet auf.",
+      "tip3": "Recherchiere, bevor du in neue Tokens investierst.",
+      "tip4": "Achte auf Betrug und Phishing-Versuche."
+    }
+  },
+  "terms": {
+    "goBackHome": "Zurück zur Startseite",
+    "title": "Allgemeine Geschäftsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "section1": {
+      "title": "1. Zustimmung zu den Bedingungen",
+      "description": "Durch den Zugriff auf unsere Website oder die Nutzung unserer Dienste bestätigen Sie Ihre Zustimmung zu diesen Nutzungsbedingungen. Wenn Sie nicht einverstanden sind, dürfen Sie unsere Plattform nicht nutzen."
+    },
+    "section2": {
+      "title": "2. Überblick über die Dienste",
+      "description": "Wir bieten digitale Tools zur Inhaltsverwaltung, Zusammenarbeit und Workflow-Optimierung. Funktionen können sich im Laufe der Zeit ändern."
+    },
+    "section3": {
+      "title": "3. Kontoverantwortung",
+      "description": "Sie sind für die Sicherheit Ihrer Anmeldedaten verantwortlich. Alle Aktivitäten unter Ihrem Konto liegen in Ihrer Verantwortung. Melden Sie unbefugten Zugriff sofort."
+    },
+    "section4": {
+      "title": "4. Zulässige Nutzung",
+      "description": "Sie verpflichten sich, unsere Plattform respektvoll und rechtmäßig zu nutzen. Missbrauch führt zur sofortigen Kontosperrung."
+    },
+    "section5": {
+      "title": "5. Zahlungsbedingungen",
+      "description": "Einige Funktionen erfordern eine Zahlung. Alle Gebühren und Informationen werden transparent dargestellt. Sie sind für etwaige Steuern verantwortlich."
+    },
+    "section6": {
+      "title": "6. Geistiges Eigentum",
+      "description": "Alle Inhalte auf der Website sind Eigentum unseres Teams und dürfen ohne Genehmigung nicht kopiert oder wiederverwendet werden."
+    },
+    "section7": {
+      "title": "7. Haftungsausschlüsse",
+      "description": "Unsere Dienste werden 'wie sie sind' bereitgestellt. Wir übernehmen keine Gewährleistung und haften nicht für Verluste durch Unterbrechungen."
+    },
+    "section8": {
+      "title": "8. Änderungen der Bedingungen",
+      "description": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Durch die weitere Nutzung akzeptieren Sie diese Änderungen."
+    }
+  }
+,
+  "Register": {
+  "backToHome": "Zurück zur Startseite",
+  "title": "Erstelle dein Konto",
+  "subtitle": "Tritt unserer Plattform bei und starte deine Reise",
+  "firstName": "Vorname",
+  "firstNamePlaceholder": "Gib deinen Vornamen ein",
+  "lastName": "Nachname",
+  "lastNamePlaceholder": "Gib deinen Nachnamen ein",
+  "email": "E-Mail",
+  "emailPlaceholder": "Gib deine E-Mail-Adresse ein",
+  "username": "Benutzername",
+  "usernamePlaceholder": "Wähle einen Benutzernamen",
+  "password": "Passwort",
+  "passwordPlaceholder": "Gib ein sicheres Passwort ein",
+  "phoneNumber": "Telefonnummer",
+  "phoneNumberPlaceholder": "Gib deine Telefonnummer ein",
+  "country": "Land",
+  "selectCountry": "Land auswählen",
+  "searchCountries": "Länder suchen...",
+  "noCountryFound": "Kein Land gefunden.",
+  "language": "Sprache",
+  "selectLanguage": "Sprache auswählen",
+  "searchLanguages": "Sprachen suchen...",
+  "noLanguageFound": "Keine Sprache gefunden.",
+  "dateOfBirth": "Geburtsdatum",
+  "pickDate": "Datum auswählen",
+  "creatingAccount": "Konto wird erstellt...",
+  "createAccount": "Konto erstellen",
+  "alreadyHaveAccount": "Du hast schon ein Konto?",
+  "signIn": "Anmelden",
+  "unlockTradingPotential": "Entfalte dein Trading-Potenzial",
+  "benefit1": "Niedrige Gebühren und schnelle Ausführung",
+  "benefit2": "Erweiterte Tools und Analysen",
+  "benefit3": "Sichere Plattform mit 24/7 Support",
+  "benefit4": "Zugang zu einem globalen Markt",
+  "totalTradingVolume": "Gesamtes Handelsvolumen",
+  "activeTraders": "Aktive Trader",
+  "countries": "Länder"
+},
+  "login": {
+    "backToHome": "Zurück zur Startseite",
+    "signIn": "Anmelden",
+    "signingIn": "Anmeldung läuft...",
+    "welcomeBack": "Willkommen zurück auf deiner Handelsplattform",
+    "emailOrUsername": "E-Mail oder Benutzername",
+    "enterEmailOrUsername": "Gib deine E-Mail oder deinen Benutzernamen ein",
+    "password": "Passwort",
+    "enterPassword": "Gib dein Passwort ein",
+    "twoFactorCode": "Zwei-Faktor-Code",
+    "enter2fa": "Gib den 2FA-Code ein",
+    "rememberMe": "Angemeldet bleiben",
+    "forgotPassword": "Passwort vergessen?",
+    "dontHaveAccount": "Du hast noch kein Konto?",
+    "signUp": "Registrieren",
+    "startTrading": "Beginne noch heute mit dem Handel",
+    "benefits": {
+      "pairAccess": "Zugang zu über 100 Kryptowährungshandelspaaren",
+      "advancedTools": "Erweiterte Tools und Echtzeit-Marktdaten",
+      "secureWallet": "Sicheres Wallet mit branchenführendem Schutz",
+      "customerSupport": "24/7 Kundensupport und Lernressourcen"
+    },
+    "totalVolume": "Gesamtvolumen",
+    "activeTraders": "Aktive Trader",
+    "countries": "Länder"
+  }
+,
+
+"sidebar": {
+    "nav": {
+      "Dashboard": "Übersicht",
+      "Finance": "Finanzen",
+      "Trading": "Handel",
+      "My Profile": "Mein Profil",
+      "Documents": "Dokumente"
+    }
+  },
+
+"dashheader": {
+    "dashboard": "Übersicht",
+    "profile": "Profil",
+    "logOut": "Abmelden",
+    "loggingOut": "Abmeldung...",
+    "user": "Benutzer",
+    "noEmail": "Keine E-Mail verfügbar",
+    "loading": "Lade...",
+    "error": "Fehler"
+  },
+
 "about": {
     "title": "Inspiriert von Neugier, angetrieben von Design",
     "subtitle": "Wir entwickeln intuitive digitale Erlebnisse, die Nutzer begeistern und Innovation fördern.",
@@ -602,79 +830,7 @@
       }
     }
   },
-  "login": {
-    "backToHome": "Zurück zur Startseite",
-    "title": "Anmelden",
-    "subtitle": "Willkommen zurück auf Ihrer Handelsplattform",
-    "emailOrUsername": "E-Mail oder Benutzername",
-    "emailOrUsernamePlaceholder": "Geben Sie Ihre E-Mail oder Ihren Benutzernamen ein",
-    "password": "Passwort",
-    "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
-    "twoFactorCode": "Zwei-Faktor-Code",
-    "twoFactorCodePlaceholder": "Geben Sie den 2FA-Code ein",
-    "rememberMe": "Angemeldet bleiben",
-    "signingIn": "Meldet an...",
-    "signIn": "Anmelden",
-    "dontHaveAccount": "Noch kein Konto?",
-    "signUp": "Registrieren",
-    "rightSide": {
-      "title": "Beginnen Sie noch heute mit dem Handel",
-      "feature1": "Zugang zu über 100 Kryptowährungshandelspaaren",
-      "feature2": "Fortgeschrittene Handelstools und Echtzeit-Marktdaten",
-      "feature3": "Sichere Wallet mit branchenführendem Schutz",
-      "feature4": "24/7 Kundensupport und Bildungsressourcen",
-      "totalVolume": "Gesamtes Handelsvolumen",
-      "totalVolumeValue": "2,8 Mrd. $+",
-      "activeTraders": "Aktive Trader",
-      "activeTradersValue": "500K+",
-      "countries": "Länder",
-      "countriesValue": "180+"
-    }
-  },
-  "register": {
-    "backToHome": "Zurück zur Startseite",
-    "title": "Konto erstellen",
-    "subtitle": "Treten Sie noch heute unserer Handelsplattform bei",
-    "firstName": "Vorname",
-    "firstNamePlaceholder": "Vorname",
-    "lastName": "Nachname",
-    "lastNamePlaceholder": "Nachname",
-    "email": "E-Mail",
-    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
-    "username": "Benutzername",
-    "usernamePlaceholder": "Wählen Sie einen Benutzernamen",
-    "password": "Passwort",
-    "passwordPlaceholder": "Erstellen Sie ein Passwort",
-    "phoneNumber": "Telefonnummer",
-    "phoneNumberPlaceholder": "Geben Sie Ihre Telefonnummer ein",
-    "country": "Land",
-    "selectCountry": "Wählen Sie Ihr Land",
-    "yourLocation": "Ihr Standort",
-    "searchCountries": "Länder suchen...",
-    "noCountriesFound": "Keine Länder gefunden",
-    "language": "Sprache",
-    "selectLanguage": "Wählen Sie Ihre Sprache",
-    "searchLanguages": "Sprachen suchen...",
-    "noLanguagesFound": "Keine Sprachen gefunden",
-    "dateOfBirth": "Geburtsdatum",
-    "creatingAccount": "Konto wird erstellt...",
-    "createAccount": "Konto erstellen",
-    "alreadyHaveAccount": "Bereits ein Konto?",
-    "signIn": "Anmelden",
-    "rightSide": {
-      "title": "Beginnen Sie noch heute mit dem Handel",
-      "feature1": "Zugang zu über 100 Kryptowährungshandelspaaren",
-      "feature2": "Fortgeschrittene Handelstools und Echtzeit-Marktdaten",
-      "feature3": "Sichere Wallet mit branchenführendem Schutz",
-      "feature4": "24/7 Kundensupport und Bildungsressourcen",
-      "totalVolume": "Gesamtes Handelsvolumen",
-      "totalVolumeValue": "2,8 Mrd. $+",
-      "activeTraders": "Aktive Trader",
-      "activeTradersValue": "500K+",
-      "countries": "Länder",
-      "countriesValue": "180+"
-    }
-  },
+
   "dashboard": {
     "title": "Dashboard",
     "overview": "Übersicht",
@@ -759,7 +915,88 @@
       "unknown": "Unbekannt"
     }
   },
- 
+   "trading": {
+    "title": "Handel",
+    "subtitle": "Verwalten Sie Ihre Handelskonten, erstellen Sie Tickets und sehen Sie den Transaktionsverlauf ein.",
+    "loading": "Handelsdaten werden geladen...",
+    "errorTitle": "Fehler beim Laden der Handelsdaten",
+    "retry": "Wiederholen",
+    "tabs": {
+      "accounts": "Handelskonten",
+      "createAccount": "Konto erstellen",
+      "create": "Ticket erstellen",
+      "history": "Ticket-Verlauf"
+    },
+    "accounts": {
+      "title": "Handelskonto auswählen",
+      "description": "Wählen Sie ein Konto aus, um dessen Wallets und Guthaben anzuzeigen.",
+      "selectLabel": "Handelskonto",
+      "selectPlaceholder": "Handelskonto auswählen",
+      "available": "Verfügbar:",
+      "total": "Gesamt:",
+      "locked": "Gesperrt:",
+      "noAccountSelected": "Kein Konto ausgewählt"
+    },
+    "createAccount": {
+      "title": "Neues Handelskonto erstellen",
+      "description": "Erstellen Sie ein neues Handelskonto, um mit dem Handel zu beginnen.",
+      "nameLabel": "Anzeigename des Kontos",
+      "namePlaceholder": "z.B. Haupt-Handelskonto",
+      "nameHelp": "Wählen Sie einen aussagekräftigen Namen für Ihr Handelskonto",
+      "creating": "Konto wird erstellt...",
+      "createButton": "Handelskonto erstellen",
+      "existingAccounts": "Bestehende Konten",
+      "account": "Konto:",
+      "validationError": "Bitte geben Sie einen Kontonamen ein",
+      "successMessage": "Handelskonto erfolgreich erstellt!",
+      "errorMessage": "Fehler beim Erstellen des Handelskontos"
+    },
+    "createTicket": {
+      "title": "Neues Ticket erstellen",
+      "description": "Erstellen Sie ein Ein- oder Auszahlungsticket für Ihr Handelskonto.",
+      "accountLabel": "Handelskonto",
+      "accountPlaceholder": "Handelskonto auswählen",
+      "walletLabel": "Wallet",
+      "walletPlaceholder": "Wallet auswählen",
+      "typeLabel": "Ticket-Typ",
+      "typePlaceholder": "Ticket-Typ auswählen",
+      "amountLabel": "Betrag",
+      "amountPlaceholder": "Betrag eingeben",
+      "creating": "Wird erstellt...",
+      "createButton": "Ticket erstellen",
+      "deposit": "Einzahlung",
+      "withdrawal": "Auszahlung",
+      "validationError": "Bitte wählen Sie eine Wallet aus und geben Sie einen gültigen Betrag ein",
+      "successMessage": "Ticket erfolgreich erstellt mit ID:",
+      "errorMessage": "Ticket konnte aufgrund unzureichender Mittel nicht erstellt werden. Bitte überprüfen Sie Ihr Guthaben und versuchen Sie es erneut."
+    },
+    "history": {
+      "title": "Ticket-Verlauf",
+      "description": "Sehen Sie alle Ihre Ein- und Auszahlungstickets ein.",
+      "showLabel": "Anzeigen:",
+      "entries": "Einträge",
+      "loading": "Lädt...",
+      "noTickets": "Keine Tickets gefunden",
+      "ticketId": "Ticket-ID:",
+      "showing": "Zeigt",
+      "to": "bis",
+      "of": "von",
+      "entriesText": "Einträgen"
+    },
+    "ticketStatus": {
+      "pending": "Ausstehend",
+      "processing": "In Bearbeitung",
+      "completed": "Abgeschlossen",
+      "cancelled": "Storniert",
+      "failed": "Fehlgeschlagen",
+      "rejected": "Abgelehnt",
+      "unknown": "Unbekannt"
+    },
+    "accountStatus": {
+      "active": "Aktiv",
+      "suspended": "Gesperrt"
+    }
+  },
   "profile": {
     "title": "Mein Profil",
     "subtitle": "Verwalten Sie Ihre Kontoeinstellungen und persönlichen Informationen.",
