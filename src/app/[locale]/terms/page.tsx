@@ -2,11 +2,14 @@
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { Header } from "../components/Header/Header";
 
 export default function TermsOfService() {
   const t = useTranslations("terms");
 
   return (
+    <>
+      <Header/>
     <main className="min-h-screen bg-gradient-to-br from-slate-100 to-white flex items-center justify-center px-4 py-16">
       <div className="max-w-4xl w-full bg-white rounded-2xl shadow-xl p-6 sm:p-10 border border-gray-200">
         <div className="mb-6">
@@ -18,7 +21,6 @@ export default function TermsOfService() {
           </Link>
         </div>
         <h1 className="text-4xl font-extrabold text-gray-800 mb-6">{t("title")}</h1>
-
         <section className="space-y-10 text-gray-700 leading-relaxed">
           {[...Array(8)].map((_, index) => (
             <div key={index}>
@@ -33,5 +35,7 @@ export default function TermsOfService() {
         </footer>
       </div>
     </main>
+    
+    </>
   );
 }

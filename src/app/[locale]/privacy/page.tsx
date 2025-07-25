@@ -1,8 +1,12 @@
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Header } from "../components/Header/Header"
+
 
 const PrivacyPolicyPage = () => {
   return (
+    <>
+    <Header/>
     <div className="min-h-screen bg-background flex items-center justify-center px-4 py-12">
       <Card className="max-w-3xl w-full shadow-lg border">
         <CardHeader className="pb-4">
@@ -178,6 +182,7 @@ const PrivacyPolicyPage = () => {
         </CardContent>
       </Card>
     </div>
+    </>
   )
 }
 

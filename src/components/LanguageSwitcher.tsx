@@ -9,12 +9,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Globe } from 'lucide-react';
+import 'flag-icons/css/flag-icons.min.css';
 
 const languages = [
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'en', name: 'English', countryCode: 'us' },
+  { code: 'es', name: 'Español', countryCode: 'es' },
+  { code: 'de', name: 'Deutsch', countryCode: 'de' },
 ];
 
 export function LanguageSwitcher() {
@@ -23,11 +23,12 @@ export function LanguageSwitcher() {
   const pathname = usePathname();
 
   const handleLanguageChange = (newLocale: string) => {
-    const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
-    const newPath =
-      newLocale === 'en'
-        ? pathWithoutLocale
-        : `/${newLocale}${pathWithoutLocale}`;
+    const segments = pathname.split('/');
+    const basePath = languages.some(lang => lang.code === segments[1])
+      ? '/' + segments.slice(2).join('/')
+      : pathname;
+
+    const newPath = `/${newLocale}${basePath === '/' ? '' : basePath}`;
     router.push(newPath);
   };
 
@@ -37,25 +38,25 @@ export function LanguageSwitcher() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          variant='outline'
-          size='sm'
-          className='gap-2 bg-black text-white flex !items-center'
+          variant="outline"
+          size="sm"
+          className="gap-2 bg-black text-white flex items-center px-3"
         >
-          <span className='hidden sm:inline'>
-            {currentLanguage?.flag} {currentLanguage?.name}
-          </span>
-          <span className='sm:hidden'>{currentLanguage?.flag}</span>
+          <span className={`fi fi-${currentLanguage?.countryCode} w-5 h-4 rounded-sm`} />
+          <span className="text-sm">{currentLanguage?.name}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align='end'>
+      <DropdownMenuContent className=' bg-black text-white'>
         {languages.map(language => (
           <DropdownMenuItem
             key={language.code}
             onClick={() => handleLanguageChange(language.code)}
-            className={locale === language.code ? 'bg-accent' : ''}
+            className={`flex items-center  text-base ${
+              locale === language.code ? ' font-medium' : ''
+            }`}
           >
-            <span className='mr-2'>{language.flag}</span>
-            {language.name}
+            <span className={`fi fi-${language.countryCode} w-5 h-4 rounded-sm`} />
+            <span className='ml-2'>{language.name}</span>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

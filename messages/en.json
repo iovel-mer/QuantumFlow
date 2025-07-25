@@ -1039,61 +1039,37 @@
     }
   },
 
+ 
   "resources": {
     "blog": {
-      "title": "Our Blog",
-      "subtitle": "Stay up-to-date with our latest news and insights.",
+      "title": "Developer Documentation",
+      "subtitle": "Comprehensive guide to get you started with our platform. Learn how to integrate, authenticate, and build amazing applications with our powerful APIs and tools.",
       "overview": {
-        "content": "Dive into our articles covering various topics, from product updates to industry trends and helpful guides."
+        "title": "Overview",
+        "content": "Welcome to our developer documentation. This guide will walk you through everything you need to know to get started with our platform. From basic setup to advanced integrations, we've got you covered with detailed explanations and practical examples."
       },
       "quickStart": {
         "title": "Quick Start Guide",
-        "content": "Learn how to get started with our platform in minutes. This section covers the basics of setup and initial steps."
+        "content": "Get up and running in minutes with our streamlined setup process. Follow these simple steps to create your first application, configure your environment, and make your first API call. No complex setup required - just follow along and you'll be building in no time."
       },
       "authentication": {
-        "title": "Authentication in Detail",
-        "content": "Understand our authentication mechanisms, including securing your applications and managing user access."
+        "title": "Authentication",
+        "content": "Secure your applications with our robust authentication system. Learn how to implement OAuth 2.0, manage API keys, handle user sessions, and ensure your data remains protected. We support multiple authentication methods to fit your specific use case."
       },
       "faq": {
         "title": "Frequently Asked Questions",
         "apiUrl": {
-          "question": "What is the API URL?",
-          "answer": "Our API is accessible at https://api.example.com/v1. Please refer to the documentation for specific endpoints."
+          "question": "What is the base API URL?",
+          "answer": "The base API URL is https://api.example.com/v1. All API endpoints should be prefixed with this URL. Make sure to use HTTPS for all requests to ensure secure communication."
         },
         "reportBug": {
-          "question": "How do I report a bug?",
-          "answer": "You can report bugs through our support portal or by sending an email to support@example.com. Please include detailed reproduction steps."
+          "question": "How do I report a bug or issue?",
+          "answer": "You can report bugs through our GitHub issues page or contact our support team directly. Please include detailed steps to reproduce the issue, expected behavior, and any relevant error messages."
         }
       },
       "backToHome": "Back to Home"
-    },
-    "documentation": {
-      "title": "Documentation",
-      "subtitle": "Find comprehensive guides and API references.",
-      "description": "Explore our detailed documentation to get started, understand advanced features, and troubleshoot common issues.",
-      "overview": {
-        "title": "Overview",
-        "content": "This section provides a general introduction to our platform and its core functionalities. Learn about the architecture and main components."
-      },
-      "quickStart": {
-        "title": "Quick Start Guide",
-        "content": "Follow this guide to set up your environment and make your first API call in minutes. Perfect for new users."
-      },
-      "auth": {
-        "title": "Authentication & Authorization",
-        "content": "Understand our security protocols, including API key management, OAuth, and user role permissions."
-      },
-      "faq": {
-        "title": "Frequently Asked Questions",
-        "q1": {
-          "question": "How do I integrate with your API?",
-          "answer": "Our API is RESTful and can be integrated using standard HTTP methods. Refer to the API Reference section for detailed examples."
-        },
-        "q2": {
-          "question": "What are the API rate limits?",
-          "answer": "Our API has a default rate limit of 100 requests per minute per API key. Higher limits can be requested for Enterprise plans."
-        }
-      }
     }
   }
+
+
 }

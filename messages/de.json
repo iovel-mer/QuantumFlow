@@ -1043,61 +1043,37 @@
       "unknown": "Unbekannt"
     }
   },
+ 
   "resources": {
     "blog": {
-      "title": "Unser Blog",
-      "subtitle": "Bleiben Sie auf dem Laufenden mit unseren neuesten Nachrichten und Einblicken.",
+      "title": "Entwickler-Dokumentation",
+      "subtitle": "Umfassender Leitfaden für den Einstieg in unsere Plattform. Lernen Sie, wie Sie integrieren, authentifizieren und erstaunliche Anwendungen mit unseren leistungsstarken APIs und Tools erstellen.",
       "overview": {
-        "content": "Tauchen Sie ein in unsere Artikel zu verschiedenen Themen, von Produktaktualisierungen über Branchentrends bis hin zu hilfreichen Anleitungen."
+        "title": "Überblick",
+        "content": "Willkommen zu unserer Entwickler-Dokumentation. Dieser Leitfaden führt Sie durch alles, was Sie wissen müssen, um mit unserer Plattform zu beginnen. Von der grundlegenden Einrichtung bis hin zu erweiterten Integrationen haben wir Sie mit detaillierten Erklärungen und praktischen Beispielen abgedeckt."
       },
       "quickStart": {
-        "title": "Schnellstartanleitung",
-        "content": "Erfahren Sie, wie Sie in wenigen Minuten mit unserer Plattform beginnen können. Dieser Abschnitt behandelt die Grundlagen der Einrichtung und die ersten Schritte."
+        "title": "Schnellstart-Anleitung",
+        "content": "Werden Sie in wenigen Minuten mit unserem optimierten Einrichtungsprozess einsatzbereit. Befolgen Sie diese einfachen Schritte, um Ihre erste Anwendung zu erstellen, Ihre Umgebung zu konfigurieren und Ihren ersten API-Aufruf zu tätigen. Keine komplexe Einrichtung erforderlich - folgen Sie einfach den Anweisungen und Sie werden im Handumdrehen entwickeln."
       },
       "authentication": {
-        "title": "Authentifizierung im Detail",
-        "content": "Verstehen Sie unsere Authentifizierungsmechanismen, einschließlich der Sicherung Ihrer Anwendungen und der Verwaltung des Benutzerzugriffs."
+        "title": "Authentifizierung",
+        "content": "Sichern Sie Ihre Anwendungen mit unserem robusten Authentifizierungssystem. Lernen Sie, wie Sie OAuth 2.0 implementieren, API-Schlüssel verwalten, Benutzersitzungen handhaben und sicherstellen, dass Ihre Daten geschützt bleiben. Wir unterstützen mehrere Authentifizierungsmethoden, die zu Ihrem spezifischen Anwendungsfall passen."
       },
       "faq": {
         "title": "Häufig gestellte Fragen",
         "apiUrl": {
-          "question": "Was ist die API-URL?",
-          "answer": "Unsere API ist unter https://api.example.com/v1 zugänglich. Bitte beachten Sie die Dokumentation für spezifische Endpunkte."
+          "question": "Wie lautet die Basis-API-URL?",
+          "answer": "Die Basis-API-URL ist https://api.example.com/v1. Alle API-Endpunkte sollten mit dieser URL vorangestellt werden. Stellen Sie sicher, dass Sie HTTPS für alle Anfragen verwenden, um eine sichere Kommunikation zu gewährleisten."
         },
         "reportBug": {
-          "question": "Wie melde ich einen Fehler?",
-          "answer": "Sie können Fehler über unser Support-Portal melden oder eine E-Mail an support@example.com senden. Bitte fügen Sie detaillierte Schritte zur Reproduktion bei."
+          "question": "Wie melde ich einen Fehler oder ein Problem?",
+          "answer": "Sie können Fehler über unsere GitHub-Issues-Seite melden oder unser Support-Team direkt kontaktieren. Bitte fügen Sie detaillierte Schritte zur Reproduktion des Problems, das erwartete Verhalten und alle relevanten Fehlermeldungen bei."
         }
       },
-      "backToHome": "Zurück"
-    },
-    "documentation": {
-      "title": "Dokumentation",
-      "subtitle": "Finden Sie umfassende Anleitungen und API-Referenzen.",
-      "description": "Erkunden Sie unsere detaillierte Dokumentation, um loszulegen, erweiterte Funktionen zu verstehen und häufige Probleme zu beheben.",
-      "overview": {
-        "title": "Übersicht",
-        "content": "Dieser Abschnitt bietet eine allgemeine Einführung in unsere Plattform und ihre Kernfunktionen. Erfahren Sie mehr über die Architektur und die Hauptkomponenten."
-      },
-      "quickStart": {
-        "title": "Schnellstartanleitung",
-        "content": "Befolgen Sie diese Anleitung, um Ihre Umgebung einzurichten und Ihren ersten API-Aufruf in wenigen Minuten zu tätigen. Perfekt für neue Benutzer."
-      },
-      "auth": {
-        "title": "Authentifizierung & Autorisierung",
-        "content": "Verstehen Sie unsere Sicherheitsprotokolle, einschließlich API-Schlüsselverwaltung, OAuth und Benutzerrollenberechtigungen."
-      },
-      "faq": {
-        "title": "Häufig gestellte Fragen",
-        "q1": {
-          "question": "Wie integriere ich mich in Ihre API?",
-          "answer": "Unsere API ist RESTful und kann mit Standard-HTTP-Methoden integriert werden. Detaillierte Beispiele finden Sie im Abschnitt API-Referenz."
-        },
-        "q2": {
-          "question": "Welche Ratenbegrenzungen gelten für die API?",
-          "answer": "Unsere API hat eine Standard-Ratenbegrenzung von 100 Anfragen pro Minute pro API-Schlüssel. Höhere Limits können für Enterprise-Pläne angefordert werden."
-        }
-      }
+      "backToHome": "Zurück zur Startseite"
     }
   }
+
+
 }

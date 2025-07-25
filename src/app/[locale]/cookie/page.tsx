@@ -1,9 +1,12 @@
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { Header } from "../components/Header/Header"
 
 export default function CookiePolicyPage() {
   return (
+    <>
+    <Header/>
     <main className="min-h-screen bg-gradient-to-b from-zinc-50 via-white to-zinc-100 flex items-center justify-center px-4 py-16">
       <Card className="max-w-4xl w-full border border-zinc-200 shadow-md rounded-2xl">
         <CardHeader className="space-y-3">
@@ -80,5 +83,6 @@ export default function CookiePolicyPage() {
         </CardContent>
       </Card>
     </main>
+    </>
   )
 }
