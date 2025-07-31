@@ -22,12 +22,12 @@ export const Header: React.FC = () => {
           {/* Logo and Brand */}
           <div className="flex items-center space-x-3">
             <Link href={`/${locale}`}>
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-600 via-fuchsia-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105">
+              <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-600 rounded-xl flex items-center justify-center shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105">
                 <Rocket size={24} className="text-white" />
               </div>
             </Link>
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent">
+              <h1 className="text-2xl font-bold text-white bg-clip-text ">
                 {t("brand.name")}
               </h1>
               <p className="text-xs text-slate-400 font-medium">{t("brand.slogan")}</p>
