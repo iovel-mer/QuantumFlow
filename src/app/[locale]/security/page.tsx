@@ -21,7 +21,7 @@ import {
   Home,
 } from 'lucide-react';
 import { Header } from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+
 
 export default function SecurityPage() {
   const t = useTranslations('security');
@@ -262,7 +262,7 @@ export default function SecurityPage() {
           
         </div>
       </main>
-      <Footer />
+   
       
       <style jsx>{`
         @keyframes fade-in-up {
