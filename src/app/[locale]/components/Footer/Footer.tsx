@@ -3,7 +3,7 @@
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
-import { Zap } from 'lucide-react';
+import { Rocket, Zap } from 'lucide-react';
 
 export default function Footer() {
   const tFooter = useTranslations('footer');
@@ -44,7 +44,7 @@ export default function Footer() {
             <div className='lg:col-span-2 md:col-span-2 px-8'>
               <div className='flex items-center space-x-2 mb-4'>
                 <div className='w-12 h-12 bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-600 rounded-xl flex items-center justify-center shadow-lg hover:shadow-emerald-500/25 transition-all duration-300 hover:scale-105'>
-                  <Zap size={24} className='text-white' />
+                  <Rocket size={24} className="text-white" />
                 </div>{' '}
                 <span className='text-2xl font-bold'>QuantumFlow</span>
               </div>
