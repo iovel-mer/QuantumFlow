@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import {
   Card,
@@ -7,7 +9,6 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-  CardFooter,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -23,9 +24,18 @@ import { Button } from "@/components/ui/button";
 import { Mail, Phone, Users, Clock } from "lucide-react";
 import { Header } from "../components/Header/Header";
 
-
 const ContactPage = () => {
   const t = useTranslations("contact");
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
+  const router = useRouter();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSuccessMessage("✅ Message sent successfully!");
+    setTimeout(() => {
+      router.push("/");
+    }, 2000);
+  };
 
   const contactOptions = [
     {
@@ -45,33 +55,6 @@ const ContactPage = () => {
       title: t("partnership.title"),
       description: t("partnership.description"),
       hours: t("partnership.hours"),
-    },
-  ];
-
-  const locations = [
-    {
-      city: t("locations.ny.title"),
-      address: [
-        t("locations.ny.line1"),
-        t("locations.ny.line2"),
-        t("locations.ny.line3"),
-      ],
-    },
-    {
-      city: t("locations.london.title"),
-      address: [
-        t("locations.london.line1"),
-        t("locations.london.line2"),
-        t("locations.london.line3"),
-      ],
-    },
-    {
-      city: t("locations.singapore.title"),
-      address: [
-        t("locations.singapore.line1"),
-        t("locations.singapore.line2"),
-        t("locations.singapore.line3"),
-      ],
     },
   ];
 
@@ -118,11 +101,7 @@ const ContactPage = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <form
-                method="POST"
-                action=""
-                className="space-y-5"
-              >
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid gap-2">
                   <Label htmlFor="name">{t("form.name")}</Label>
                   <Input
@@ -182,12 +161,17 @@ const ContactPage = () => {
                 >
                   {t("form.button")}
                 </Button>
+
+                {successMessage && (
+                  <p className="text-green-400 text-sm text-center mt-4">
+                    {successMessage}
+                  </p>
+                )}
               </form>
             </CardContent>
           </Card>
         </div>
       </div>
-    
     </>
   );
 };

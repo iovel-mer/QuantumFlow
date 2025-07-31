@@ -93,40 +93,39 @@
     "movement": "24h Entwicklung"
   },
   "footer": {
-    "description": "Die weltweit führende Plattform für den Handel mit Kryptowährungen – vertraut von Millionen Nutzern. Handeln Sie mit Vertrauen und Sicherheit.",
-    "stats": {
-      "users": "Aktive Nutzer",
-      "volume": "Tägliches Volumen"
+    "description": "SalesVault ist die vertrauenswürdigste Handelsplattform für Kryptowährungen und bietet fortschrittliche Tools sowie erstklassige Sicherheit. Unsere Mission ist es, das beste Handelserlebnis zu schaffen und unseren Kunden die Freiheit zu geben, ohne Einschränkungen zu handeln.",
+    "company_info": "SalesVault ist der Handelsname von Raw Trading Ltd, das von der Seychelles Financial Services Authority (FSA) mit der Lizenznummer SD016 als Wertpapierhändler reguliert wird.",
+    "risk_warning": "Risikohinweis: Der Handel mit Forex und CFDs birgt ein hohes Risiko für Ihr Kapital. Sie sollten nur mit Geld handeln, dessen Verlust Sie sich leisten können. Der Handel mit Forex und CFDs ist möglicherweise nicht für alle Anleger geeignet.",
+    "execution_notice": "Die Ausführung von Trades, Preisgestaltung, Geschwindigkeit und der Zugriff auf Konten können durch verschiedene Faktoren beeinflusst werden, darunter Marktschwankungen, Auftragsgröße und -typ, Handelsvolumen und Systemleistung. In Zeiten hoher Marktaktivität oder eingeschränkter Systemverfügbarkeit kann es zu Verzögerungen beim Kontozugriff und bei der Auftragsausführung kommen. Anleger sollten sich dieser Risiken bewusst sein und entsprechend planen.",
+    "age_restriction": "Sie müssen mindestens 18 Jahre alt sein oder das gesetzlich vorgeschriebene Mindestalter in Ihrem Land erreicht haben.",
+    "company": "Unternehmen",
+    "support": "Support",
+    "blog": "Blog",
+    "resources": "Ressourcen",
+    "documentation": "Dokumentation",
+    "aboutUs": "Über Uns",
+    "security": "Sicherheit",
+    "helpCenter": "Hilfezentrum",
+    "contactUs": "Kontaktieren Sie uns",
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "content": "<h3 class=\"text-xl font-semibold mb-4 text-white\">1. Annahme der Bedingungen</h3><p class=\"mb-4\">Durch den Zugriff auf und die Nutzung von SalesVault akzeptieren Sie...</p>..."
     },
-    "sections": {
-      "company": {
-        "title": "Unternehmen",
-        "links": {
-          "about": "Über uns",
-          "security": "Sicherheit"
-        }
-      },
-      "support": {
-        "title": "Support",
-        "links": {
-          "help": "Hilfezentrum",
-          "contact": "Kontakt"
-        }
-      },
-      "resources": {
-        "title": "Ressourcen",
-        "links": {
-          "blog": "Blog",
-          "documentation": "Dokumentation"
-        }
-      }
+    "privacy": {
+      "title": "Datenschutzrichtlinie",
+      "content": "<h3 class=\"text-xl font-semibold mb-4 text-white\">1. Welche Informationen wir sammeln</h3><p class=\"mb-4\">Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen...</p>..."
     },
-    "rights": "Alle Rechte vorbehalten.",
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "content": "<h3 class=\"text-xl font-semibold mb-4 text-white\">1. Was sind Cookies</h3><p class=\"mb-4\">Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden...</p>..."
+    },
     "legal": {
       "terms": "Nutzungsbedingungen",
-      "privacy": "Datenschutzrichtlinie",
-      "cookie": "Cookie-Richtlinie"
-    }
+      "privacy": "Datenschutz",
+      "cookies": "Cookie-Richtlinie"
+    },
+    "rights": "Alle Rechte vorbehalten.",
+    "close": "Schließen"
   },
   "about": {
     "title": "Inspiriert von Neugier, getrieben von Design",

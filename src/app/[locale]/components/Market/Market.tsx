@@ -6,6 +6,7 @@ import { getMarketData, type MarketData } from "@/app/api/market/actions"
 import { TrendingUp, TrendingDown, Activity, RefreshCw, BarChart3 } from "lucide-react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
+import { log } from "console"
 
 export const Market: React.FC = () => {
   const [marketData, setMarketData] = useState<MarketData[]>([])
@@ -18,6 +19,7 @@ export const Market: React.FC = () => {
     try {
       setLoading(true)
       const result = await getMarketData()
+      console.log(result)
       if (result.success) {
         setMarketData(result.data as any)
         setError(null)

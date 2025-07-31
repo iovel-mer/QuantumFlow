@@ -1,5 +1,5 @@
 
-import {Footer} from "@/app/[locale]/components/Footer/Footer";
+import Footer from "@/app/[locale]/components/Footer/Footer";
 import { Header } from "@/app/[locale]/components/Header/Header";
 import { Hero } from "@/app/[locale]/components/Hero/Hero";
 import { Market } from "@/app/[locale]/components/Market/Market";

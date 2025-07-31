@@ -59,29 +59,8 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-4 gap-8">
-            {/* Sidebar - Table of Contents */}
-            <div className="lg:col-span-1">
-              <Card className="sticky top-8">
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-white mb-4">
-                    {t("toc")}
-                  </h3>
-                  <nav className="space-y-2">
-                    {tableOfContents.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className="flex items-center gap-3 w-full text-left p-2 rounded-lg hover:bg-gray-100 transition-colors text-sm text-white hover:text-gray-900"
-                      >
-                        <item.icon className="w-4 h-4" />
-                        {item.title}
-                      </button>
-                    ))}
-                  </nav>
-                </CardContent>
-              </Card>
-            </div>
+          
+           
 
             {/* Main Content */}
             <div className="lg:col-span-3">
@@ -106,7 +85,7 @@ const Page = () => {
                 </section>
               </article>
             </div>
-          </div>
+          
         </div>
       </main>
     </div>

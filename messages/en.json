@@ -93,41 +93,35 @@
     "movement": "24h Movement"
   },
   "footer": {
-  "description": "The world's leading cryptocurrency trading platform trusted by millions of users worldwide. Trade with confidence and security.",
-  "stats": {
-    "users": "Active Users",
-    "volume": "Daily Volume"
-  },
-  "sections": {
-    "company": {
-      "title": "Company",
-      "links": {
-        "about": "About Us",
-        "security": "Security"
-      }
+    "description": "QuantumFlow is the most trusted cryptocurrency trading platform, offering advanced tools and top-tier security. Our mission is to create the best trading experience and give our clients the freedom to trade without limitations.",
+    "company_info": "QuantumFlow is the trading name of Raw Trading Ltd, which is regulated by the Seychelles Financial Services Authority (FSA) with Securities Dealer’s license number SD016.",
+    "risk_warning": "Risk Warning: Trading Forex and CFDs carries a high level of risk to your capital and you should only trade with money you can afford to lose. Trading Forex and CFDs may not be suitable for all investors.",
+    "execution_notice": "Trade execution, pricing, speed, and account access may be affected by a variety of factors including market volatility, order size and type, trading volume, and system performance. During periods of high market activity or limited system availability, delays in account access and trade execution may occur. Investors should be aware of these risks and plan accordingly when placing trades.",
+    "age_restriction": "You must be 18 years old, or of legal age as determined in your country.",
+    "company": "Company",
+    "support": "Support",
+    "blog": "Blog",
+    "resources": "Resources",
+    "documentation": "Documentation",
+    "aboutUs": "About Us",
+    "security": "Security",
+    "helpCenter": "Help Center",
+    "contactUs": "Contact Us",
+    "terms": {
+      "title": "Terms of Service",
+      "content": "<h3 class=\"text-xl font-semibold mb-4 text-white\">1. Acceptance of Terms</h3><p class=\"mb-4\">By accessing and using TechFlow, you accept and agree to be bound by the terms and provision of this agreement.</p>..."
     },
-    "support": {
-      "title": "Support",
-      "links": {
-        "help": "Help Center",
-        "contact": "Contact Us"
-      }
+    "privacy": {
+      "title": "Privacy Policy",
+      "content": "<h3 class=\"text-xl font-semibold mb-4 text-white\">1. Information We Collect</h3><p class=\"mb-4\">We collect information you provide directly to us...</p>..."
     },
-     "resources": {
-      "title": "Resources",
-      "links": {
-        "blog": "Blog",
-        "documentation": "Documentation"
-      }
-    }
+    "cookies": {
+      "title": "Cookie Policy",
+      "content": "<h3 class=\"text-xl font-semibold mb-4 text-white\">1. What Are Cookies</h3><p class=\"mb-4\">Cookies are small text files stored on your device...</p>..."
+    },
+     "rights": "All rights reserved.",
+    "close": "Close"
   },
-  "rights": "All rights reserved.",
-  "legal": {
-    "terms": "Terms of Service",
-    "privacy": "Privacy Policy",
-    "cookie": "Cookie Policy"
-  }
-},
 "about": {
     "title": "Inspired by Curiosity, Driven by Design",
     "subtitle": "We build intuitive digital experiences that delight users and spark innovation.",
