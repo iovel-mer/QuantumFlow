@@ -90,10 +90,17 @@ export default function Footer() {
             ))}
           </div>
           <Separator className='w-full mb-10' />
-        
+         <Separator className='w-full mb-10' />
+          <div className='flex flex-col w-full space-y-4 mb-10'>
+            <p className='text-gray-400'>{tFooter('company_info')}</p>
+            <p className='text-gray-400'>{tFooter('risk_warning')}</p>
+            <p className='text-gray-400'>{tFooter('execution_notice')}</p>
+            <p className='text-gray-400'>{tFooter('age_restriction')}</p>
+          </div>
+
 
           <p className='text-gray-400 text-sm'>
-            © {new Date().getFullYear()} TechFlow. {tFooter('rights')}
+            © {new Date().getFullYear()} QuantumFlow. {tFooter('rights')}
           </p>
         </div>
       </footer>
