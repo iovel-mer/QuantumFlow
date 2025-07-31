@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 import { Header } from "../components/Header/Header";
 import {
   Card,
@@ -15,6 +16,8 @@ import {
   Shield,
   Users,
   Zap,
+  Home,
+  ArrowRight,
 } from "lucide-react";
 
 const Page = () => {
@@ -83,7 +86,17 @@ const Page = () => {
         <div className="relative z-10 max-w-7xl mx-auto">
           {/* Hero Section */}
           <section className="text-center mb-20">
-            
+            {/* Back to Home Link */}
+            <div className='flex justify-start mb-8'>
+              <Link 
+                href="/" 
+                className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group text-sm font-medium text-white'
+              >
+                <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300' />
+                {t('backToHome')}
+                <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300' />
+              </Link>
+            </div>
           </section>
 
           {/* Help Categories Section */}

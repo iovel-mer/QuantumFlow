@@ -129,6 +129,7 @@
   },
   "about": {
     "title": "Inspirados por la Curiosidad, Impulsados por el Diseño",
+    "backToHome": "Volver al Inicio",
     "subtitle": "Construimos experiencias digitales intuitivas que deleitan a los usuarios y despiertan la innovación.",
     "missionTitle": "Nuestra Misión",
     "missionText": "Crear soluciones significativas que simplifiquen los desafíos cotidianos y eleven la interacción humana con la tecnología.",
@@ -145,39 +146,71 @@
     "value3Text": "La comunicación abierta construye confianza, y la confianza impulsa todo lo que hacemos con nuestros clientes y equipo."
   },
   "security": {
-    "hero": {
-      "title": "Inspirados por la Curiosidad, Impulsados por el Diseño",
-      "subtitle": "Construimos experiencias digitales intuitivas que deleitan a los usuarios y despiertan la innovación."
-    },
-    "highlights": {
-      "mission": {
-        "title": "Nuestra Misión",
-        "text": "Crear soluciones significativas que simplifiquen los desafíos cotidianos y eleven la interacción humana con la tecnología."
+    "title": "Tu Seguridad, Nuestra Prioridad",
+    "subtitle": "Proteger tus activos y datos es nuestra principal misión...",
+    "backToHome": "Volver al Inicio",
+  "bankGradeSecurity": "Seguridad de Grado Bancario",
+  "features": {
+    "encryption": "Cifrado de 256 bits",
+    "multiSignature": "Carteras Multi-Firma",
+    "monitoring": "Monitoreo 24/7"
+  },
+    "assetProtection": {
+      "title": "Protección de Activos",
+      "coldStorage": {
+        "title": "Almacenamiento en Frío",
+        "description": "Más del 95% de los activos están fuera de línea..."
       },
-      "who": {
-        "title": "Quiénes Somos",
-        "text": "Un colectivo creativo de desarrolladores, diseñadores y soñadores que transforman las posibilidades digitales desde 2022."
+      "insurance": {
+        "title": "Cobertura de Seguro",
+        "description": "Póliza integral contra riesgos digitales."
       },
-      "why": {
-        "title": "Por Qué Importa",
-        "text": "Porque cada interacción importa: creemos que el buen diseño puede cambiar la forma en que vivimos, trabajamos y nos conectamos."
+      "accounts": {
+        "title": "Cuentas Separadas",
+        "description": "Fondos de clientes en cuentas reguladas."
       }
     },
-    "values": {
-      "title": "Qué Nos Guía",
-      "empathy": {
-        "title": "Empatía",
-        "text": "Diseñamos pensando en las personas, poniendo la experiencia del usuario en el corazón de todo lo que creamos."
+    "technical": {
+      "title": "Seguridad Técnica",
+      "multiSig": {
+        "title": "Carteras Multi-Firma",
+        "description": "Se requieren varias claves para transacciones."
       },
-      "agility": {
-        "title": "Agilidad",
-        "text": "Nos adaptamos rápidamente e iteramos velozmente, abrazando el cambio como impulsor de mejores resultados."
+      "encryption": {
+        "title": "Cifrado de Extremo a Extremo",
+        "description": "Datos cifrados usando AES-256."
+      },
+      "monitoring": {
+        "title": "Monitoreo 24/7",
+        "description": "Detección de amenazas en tiempo real."
+      }
+    },
+    "compliance": {
+      "title": "Cumplimiento Regulatorio",
+      "regulatory": {
+        "title": "Cumplimiento Global",
+        "description": "Operamos bajo supervisión regulatoria."
+      },
+      "audits": {
+        "title": "Auditorías Regulares",
+        "description": "Auditorías de seguridad trimestrales."
       },
       "transparency": {
         "title": "Transparencia",
-        "text": "La comunicación abierta construye confianza, y la confianza impulsa todo lo que hacemos con nuestros clientes y equipo."
+        "description": "Informes de auditoría disponibles."
       }
-    }
+    },
+    "tips": {
+      "title": "Mejora la Seguridad de tu Cuenta",
+      "list": [
+        "Activa la autenticación en dos pasos.",
+        "Usa una contraseña única y segura.",
+        "No compartas tus credenciales.",
+        "Revisa tu actividad con frecuencia.",
+        "Informa actividad sospechosa."
+      ]
+    },
+    "note": "Nuestro compromiso con la seguridad es inquebrantable..."
   },
   "browse": {
     "title": "Explorar por Categoría",
@@ -207,6 +240,7 @@
   },
   "contact": {
     "title": "Contáctanos",
+    "backToHome": "Volver al Inicio",
     "subtitle": "Ya sea que tengas preguntas, comentarios o ideas de asociación, estamos aquí para conectar.",
     "general": {
       "title": "Consultas Generales",
@@ -277,6 +311,7 @@
   },
   "docs": {
     "title": "Fundamentos de Criptomonedas",
+    "backToHome": "Volver al Inicio",
     "whatIs": {
       "title": "Qué es la Criptomoneda?",
       "text": "La criptomoneda es una moneda digital o virtual que utiliza criptografía para la seguridad. Opera en redes descentralizadas basadas en tecnología blockchain."
@@ -1038,6 +1073,7 @@
       "title": "Bienvenido a Ayuda",
       "subtitle": "Encuentra respuestas a tus preguntas"
     },
+     "backToHome": "Volver al Inicio",
     "browse": {
       "title": "Explorar Categorías",
       "subtitle": "Explora diferentes temas"
@@ -1168,28 +1204,7 @@
     }
   },
 
-"Docs": {
-  "title": "Documentación de CryptoAPI",
-  "description": "Una API REST completa para datos del mercado de criptomonedas, gestión de billeteras e interacciones blockchain.",
-  "features": {
-    "easy": "Fácil de Usar",
-    "easyDesc": "API REST simple con documentación y ejemplos completos.",
-    "realtime": "Datos en Tiempo Real",
-    "realtimeDesc": "Datos de mercado en vivo con soporte WebSocket para actualizaciones en tiempo real.",
-    "secure": "Seguro",
-    "secureDesc": "Seguridad de nivel empresarial con autenticación mediante clave API."
-  },
-  "rateLimitsTitle": "Límites de Peticiones",
-  "rateLimitsDescription": "Las solicitudes a la API están limitadas para garantizar un uso justo y la estabilidad del sistema.",
-  "quickStartTitle": "Inicio Rápido",
-  "quickStartDescription": "Comienza con un ejemplo simple para obtener datos del precio de Bitcoin.",
-  "getPriceTitle": "Obtener Datos de Precio",
-  "getPriceDescription": "Recupera información actual de precios de cualquier criptomoneda compatible.",
-  "createWalletTitle": "Crear Billetera",
-  "createWalletDescription": "Crea una nueva billetera de criptomonedas para tu aplicación.",
-  "webhookTitle": "Configurar Webhooks",
-  "webhookDescription": "Configura webhooks para recibir notificaciones en tiempo real sobre cambios de precio, transacciones y otros eventos."
-},
+
 "Terms": {
   "title": "Términos del Servicio",
   "backToHome": "Volver al Inicio",

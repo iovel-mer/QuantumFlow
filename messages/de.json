@@ -129,6 +129,7 @@
   },
   "about": {
     "title": "Inspiriert von Neugier, getrieben von Design",
+     "backToHome": "Zurück zur Startseite",
     "subtitle": "Wir schaffen intuitive digitale Erlebnisse, die Nutzer begeistern und Innovation entfachen.",
     "missionTitle": "Unsere Mission",
     "missionText": "Bedeutungsvolle Lösungen entwickeln, die alltägliche Herausforderungen vereinfachen und die Interaktion mit Technologie verbessern.",
@@ -144,40 +145,72 @@
     "value3Title": "Transparenz",
     "value3Text": "Offene Kommunikation schafft Vertrauen – und dieses Vertrauen prägt alles, was wir mit Kunden und im Team tun."
   },
-  "security": {
-    "hero": {
-      "title": "Inspiriert von Neugier, getrieben von Design",
-      "subtitle": "Wir schaffen intuitive digitale Erlebnisse, die Nutzer begeistern und Innovation entfachen."
-    },
-    "highlights": {
-      "mission": {
-        "title": "Unsere Mission",
-        "text": "Bedeutungsvolle Lösungen entwickeln, die alltägliche Herausforderungen vereinfachen und die Interaktion mit Technologie verbessern."
+   "security": {
+    "title": "Ihre Sicherheit, Unsere Priorität",
+    "subtitle": "Der Schutz Ihrer Vermögenswerte steht im Mittelpunkt...",
+    "backToHome": "Zurück zur Startseite",
+  "bankGradeSecurity": "Banking-Grade Sicherheit",
+  "features": {
+    "encryption": "256-Bit-Verschlüsselung",
+    "multiSignature": "Multi-Signatur-Wallets",
+    "monitoring": "24/7 Überwachung"
+  },
+    "assetProtection": {
+      "title": "Vermögensschutz",
+      "coldStorage": {
+        "title": "Cold Storage",
+        "description": "Über 95% der digitalen Assets offline gesichert..."
       },
-      "who": {
-        "title": "Wer wir sind",
-        "text": "Ein kreatives Kollektiv aus Entwicklern, Designern und Visionären, das seit 2022 digitale Möglichkeiten neu denkt."
+      "insurance": {
+        "title": "Versicherungsschutz",
+        "description": "Versicherung gegen digitale Risiken."
       },
-      "why": {
-        "title": "Warum das wichtig ist",
-        "text": "Weil jede Interaktion zählt – wir glauben, gutes Design kann unser Leben, Arbeiten und unsere Verbindungen verändern."
+      "accounts": {
+        "title": "Getrennte Konten",
+        "description": "Kundengelder in separaten Konten."
       }
     },
-    "values": {
-      "title": "Was uns leitet",
-      "empathy": {
-        "title": "Empathie",
-        "text": "Wir gestalten mit Blick auf die Menschen – Benutzererfahrung steht im Mittelpunkt all unserer Kreationen."
+    "technical": {
+      "title": "Technische Sicherheit",
+      "multiSig": {
+        "title": "Multisignatur-Wallets",
+        "description": "Mehrere Schlüssel für Transaktionen."
       },
-      "agility": {
-        "title": "Agilität",
-        "text": "Wir passen uns schnell an und iterieren zügig – Veränderung ist für uns ein Motor für bessere Ergebnisse."
+      "encryption": {
+        "title": "Ende-zu-Ende-Verschlüsselung",
+        "description": "Verschlüsselung mit AES-256 Standard."
+      },
+      "monitoring": {
+        "title": "24/7 Überwachung",
+        "description": "Echtzeit-Erkennung von Bedrohungen."
+      }
+    },
+    "compliance": {
+      "title": "Regulatorische Konformität",
+      "regulatory": {
+        "title": "Globale Regulierungsstandards",
+        "description": "Wir arbeiten unter strenger Aufsicht."
+      },
+      "audits": {
+        "title": "Regelmäßige Audits",
+        "description": "Sicherheitsprüfungen durch Top-Firmen."
       },
       "transparency": {
         "title": "Transparenz",
-        "text": "Offene Kommunikation schafft Vertrauen – und dieses Vertrauen prägt alles, was wir mit Kunden und im Team tun."
+        "description": "Berichte auf Anfrage verfügbar."
       }
-    }
+    },
+    "tips": {
+      "title": "Sicherheitstipps für Ihr Konto",
+      "list": [
+        "Aktivieren Sie 2FA für zusätzlichen Schutz.",
+        "Verwenden Sie ein starkes Passwort.",
+        "Teilen Sie keine Anmeldedaten.",
+        "Überprüfen Sie regelmäßig die Aktivitäten.",
+        "Melden Sie verdächtige Aktivitäten sofort."
+      ]
+    },
+    "note": "Unser Engagement für Sicherheit ist unerschütterlich..."
   },
   "browse": {
     "title": "Nach Kategorie durchsuchen",
@@ -207,6 +240,7 @@
   },
   "contact": {
     "title": "Kontaktieren Sie uns",
+    "backToHome": "Zurück zur Startseite",
     "subtitle": "Egal ob Fragen, Feedback oder Partnerschaften – wir freuen uns auf Ihre Nachricht.",
     "general": {
       "title": "Allgemeine Anfragen",
@@ -277,6 +311,7 @@
   },
   "docs": {
     "title": "Krypto-Grundlagen",
+    "backToHome": "Zurück zur Startseite",
     "whatIs": {
       "title": "Was ist Kryptowährung?",
       "text": "Kryptowährung ist eine digitale oder virtuelle Währung, die Kryptografie zur Sicherheit nutzt. Sie basiert auf dezentralen Netzwerken mit Blockchain-Technologie."
@@ -996,6 +1031,7 @@
     "title": "Willkommen im Hilfe-Bereich",
     "subtitle": "Finden Sie Antworten auf Ihre Fragen"
   },
+   "backToHome": "Zurück zur Startseite",
   "browse": {
     "title": "Kategorien durchsuchen",
     "subtitle": "Entdecken Sie verschiedene Themen"
@@ -1169,28 +1205,7 @@
   }
 },
 
-"Docs": {
-  "title": "CryptoAPI Dokumentation",
-  "description": "Eine umfassende REST-API für Kryptowährungs-Marktdaten, Wallet-Verwaltung und Blockchain-Interaktionen.",
-  "features": {
-    "easy": "Einfach zu bedienen",
-    "easyDesc": "Einfache REST-API mit umfassender Dokumentation und Beispielen.",
-    "realtime": "Echtzeit-Daten",
-    "realtimeDesc": "Live-Marktdaten mit WebSocket-Unterstützung für Echtzeit-Updates.",
-    "secure": "Sicher",
-    "secureDesc": "Enterprise-Sicherheit mit API-Schlüssel-Authentifizierung."
-  },
-  "rateLimitsTitle": "Anfragelimits",
-  "rateLimitsDescription": "API-Anfragen sind limitiert, um faire Nutzung und Systemstabilität zu gewährleisten.",
-  "quickStartTitle": "Schnellstart",
-  "quickStartDescription": "Starten Sie mit einem einfachen Beispiel, um Bitcoin-Preisdaten abzurufen.",
-  "getPriceTitle": "Preisdaten abrufen",
-  "getPriceDescription": "Abrufen von aktuellen Preisinformationen für jede unterstützte Kryptowährung.",
-  "createWalletTitle": "Wallet erstellen",
-  "createWalletDescription": "Erstellen Sie ein neues Kryptowährungs-Wallet für Ihre Anwendung.",
-  "webhookTitle": "Webhooks einrichten",
-  "webhookDescription": "Konfigurieren Sie Webhooks, um Echtzeit-Benachrichtigungen über Preisänderungen, Transaktionen und andere Ereignisse zu erhalten."
-},
+
 
 "Terms": {
   "title": "Nutzungsbedingungen",

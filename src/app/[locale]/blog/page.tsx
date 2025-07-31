@@ -11,7 +11,10 @@ import {
   HelpCircle,
   Clock,
   User,
+  Home,
+  ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 
 const Page = () => {
   const t = useTranslations("blog");
@@ -34,6 +37,14 @@ const Page = () => {
       <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none"></div>
       <main className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
         <div className="max-w-6xl mx-auto">
+         <Link 
+              href="/" 
+              className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group text-sm font-medium text-white'
+            >
+              <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300' />
+              {t('backToHome')}
+              <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300' />
+            </Link>
           {/* Hero Section */}
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">

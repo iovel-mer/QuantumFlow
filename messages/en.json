@@ -124,6 +124,7 @@
   },
 "about": {
     "title": "Inspired by Curiosity, Driven by Design",
+    "backToHome": "Back to Home",
     "subtitle": "We build intuitive digital experiences that delight users and spark innovation.",
     "missionTitle": "Our Mission",
     "missionText": "To craft meaningful solutions that simplify everyday challenges and elevate human interaction with technology.",
@@ -138,41 +139,74 @@
     "value2Text": "We adapt quickly and iterate fast, embracing change as a driver of better results.",
     "value3Title": "Transparency",
     "value3Text": "Open communication builds trust, and trust drives everything we do with our clients and team."
+    
+},
+ "security": {
+    "title": "Your Security, Our Priority",
+    "subtitle": "Protecting your assets and data is at the core of everything we do...",
+    "backToHome": "Back to Home",
+  "bankGradeSecurity": "Bank-Grade Security",
+  "features": {
+    "encryption": "256-bit Encryption",
+    "multiSignature": "Multi-Signature Wallets", 
+    "monitoring": "24/7 Monitoring"
   },
-  "security": {
-    "hero": {
-      "title": "Inspired by Curiosity, Driven by Design",
-      "subtitle": "We build intuitive digital experiences that delight users and spark innovation."
-    },
-    "highlights": {
-      "mission": {
-        "title": "Our Mission",
-        "text": "To craft meaningful solutions that simplify everyday challenges and elevate human interaction with technology."
+    "assetProtection": {
+      "title": "Asset Protection",
+      "coldStorage": {
+        "title": "Cold Storage",
+        "description": "Over 95% of digital assets are secured offline..."
       },
-      "who": {
-        "title": "Who We Are",
-        "text": "A creative collective of developers, designers, and dreamers reshaping digital possibilities since 2022."
+      "insurance": {
+        "title": "Insurance Coverage",
+        "description": "Comprehensive insurance policy protects against risks."
       },
-      "why": {
-        "title": "Why It Matters",
-        "text": "Because every interaction matters—we believe good design can change the way we live, work, and connect."
+      "accounts": {
+        "title": "Segregated Accounts",
+        "description": "Client funds are held in regulated accounts."
       }
     },
-    "values": {
-      "title": "What Guides Us",
-      "empathy": {
-        "title": "Empathy",
-        "text": "We design with people in mind, putting user experience at the heart of everything we create."
+    "technical": {
+      "title": "Technical Security",
+      "multiSig": {
+        "title": "Multi-Signature Wallets",
+        "description": "Multiple keys required for all transactions."
       },
-      "agility": {
-        "title": "Agility",
-        "text": "We adapt quickly and iterate fast, embracing change as a driver of better results."
+      "encryption": {
+        "title": "End-to-End Encryption",
+        "description": "All data encrypted using AES-256."
+      },
+      "monitoring": {
+        "title": "24/7 Monitoring",
+        "description": "Real-time threat detection and response."
+      }
+    },
+    "compliance": {
+      "title": "Regulatory Compliance",
+      "regulatory": {
+        "title": "Global Regulatory Adherence",
+        "description": "Operating under oversight of financial authorities."
+      },
+      "audits": {
+        "title": "Regular Audits",
+        "description": "Security audits by firms like Deloitte."
       },
       "transparency": {
         "title": "Transparency",
-        "text": "Open communication builds trust, and trust drives everything we do with our clients and team."
+        "description": "Audit reports available upon request."
       }
-    }
+    },
+    "tips": {
+      "title": "Enhance Your Account Security",
+      "list": [
+        "Enable 2FA for added protection.",
+        "Use a strong, unique password.",
+        "Never share login credentials.",
+        "Check account activity regularly.",
+        "Report suspicious activity immediately."
+      ]
+    },
+    "note": "Our commitment to security is unwavering..."
   },
   "browse": {
     "title": "Browse by Category",
@@ -203,6 +237,7 @@
 
 "contact": {
     "title": "Contact Us",
+    "backToHome": "Back to Home",
     "subtitle": "Whether you have questions, feedback, or partnership ideas — we're here to connect.",
     "general": {
       "title": "General Inquiries",
@@ -272,6 +307,7 @@
     }
   },
  "docs": {
+  "backToHome": "Back to Home",
     "title": "Cryptocurrency Basics",
     "whatIs": {
       "title": "What is Cryptocurrency?",
@@ -975,6 +1011,7 @@
 "blog": {
      "badge": "Documentation",
       "title": "Developer Documentation",
+       
       "meta": {
     "readTime": "5 min read",
     "updated": "Updated recently"
@@ -1058,6 +1095,7 @@
       "title": "Welcome to Help",
       "subtitle": "Find answers to your questions"
     },
+    "backToHome": "Back to Home",
     "browse": {
       "title": "Browse Categories",
       "subtitle": "Explore different topics"
@@ -1237,32 +1275,7 @@
       }
     }
   },
- 
-  
 
-
-  "Docs": {
-    "title": "CryptoAPI Documentation",
-    "description": "A comprehensive REST API for cryptocurrency market data, wallet management, and blockchain interactions.",
-    "features": {
-      "easy": "Easy to Use",
-      "easyDesc": "Simple REST API with comprehensive documentation and examples.",
-      "realtime": "Real-time Data",
-      "realtimeDesc": "Live market data with WebSocket support for real-time updates.",
-      "secure": "Secure",
-      "secureDesc": "Enterprise-grade security with API key authentication."
-    },
-    "rateLimitsTitle": "Rate Limits",
-    "rateLimitsDescription": "API requests are rate limited to ensure fair usage and system stability.",
-    "quickStartTitle": "Quick Start",
-    "quickStartDescription": "Get started with a simple example to fetch Bitcoin price data.",
-    "getPriceTitle": "Get Price Data",
-    "getPriceDescription": "Retrieve current price information for any supported cryptocurrency.",
-    "createWalletTitle": "Create Wallet",
-    "createWalletDescription": "Create a new cryptocurrency wallet for your application.",
-    "webhookTitle": "Setup Webhooks",
-    "webhookDescription": "Configure webhooks to receive real-time notifications about price changes, transactions, and other events."
-  },
   "Terms": {
     "title": "Terms of Service",
     "backToHome": "Back to Home",
