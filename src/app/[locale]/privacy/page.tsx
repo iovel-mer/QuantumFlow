@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useTranslations } from "next-intl"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Header } from "../components/Header/Header"
+import { ArrowRight, Home } from "lucide-react"
 
 const PrivacyPolicyPage = () => {
   const t = useTranslations("Privacy")
@@ -14,8 +15,13 @@ const PrivacyPolicyPage = () => {
       <div className="min-h-screen bg-background flex items-center justify-center px-4 py-12">
         <Card className="max-w-3xl w-full shadow-lg border">
           <CardHeader className="pb-4">
-            <Link href="/" className="text-sm text-muted-foreground hover:text-foreground">
-              ← {t("backToHome")}
+            <Link 
+              href="/" 
+              className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group text-sm font-medium text-white'
+            >
+              <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300' />
+              {t('backToHome')}
+              <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300' />
             </Link>
             <CardTitle className="text-3xl font-bold text-primary mt-4">{t("title")}</CardTitle>
             <CardDescription className="text-muted-foreground">

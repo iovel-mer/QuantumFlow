@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Header } from "../components/Header/Header"
+import { ArrowRight, Home } from "lucide-react"
 
 export default function CookiePage() {
   const t = useTranslations("Cookie")
@@ -16,9 +17,14 @@ export default function CookiePage() {
                           <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none"></div>
         <Card className="max-w-4xl w-full border border-zinc-200 shadow-md rounded-2xl">
           <CardHeader className="space-y-3">
-            <Button asChild variant="link" className="px-0 text-sm text-white hover:text-blue-800">
-              <Link href="/">{t("backToHome")}</Link>
-            </Button>
+            <Link 
+              href="/" 
+              className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group text-sm font-medium text-white'
+            >
+              <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300' />
+              {t('backToHome')}
+              <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300' />
+            </Link>
             <CardTitle className="text-4xl font-bold text-white">{t("title")}</CardTitle>
             <p className="text-white text-sm">{t("description")}</p>
           </CardHeader>
