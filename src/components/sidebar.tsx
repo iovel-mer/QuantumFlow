@@ -93,7 +93,7 @@ export function Sidebar({ className }: SidebarProps) {
           <div className='h-8 w-8 rounded-lg flex items-center justify-center'>
            <Zap size={24} className="text-white" />
           </div>
-          <span className='text-lg'>TechFlow</span>
+          <span className='text-lg'>QuantumFlow</span>
         </Link>
       </div>
       <nav className='flex-1 space-y-1 px-2'>
