@@ -15,17 +15,16 @@ export const Header: React.FC = () => {
   const t = useTranslations("Header")
 
   return (
-    <header className="bg-gradient-to-br sticky top-0 from-slate-950 via-slate-900 to-slate-950 shadow-md z-50">
+    <header className="bg-gradient-to-br  container mx-auto sticky top-0 from-slate-950 via-slate-900 to-slate-950 shadow-md z-50">
         <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none"></div>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
-          <div className="flex items-center space-x-3">
             <Link href={`/${locale}`}>
+          <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-600 rounded-xl flex items-center justify-center shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105">
                 <Rocket size={24} className="text-white" />
               </div>
-            </Link>
             <div>
               <h1 className="text-2xl font-bold text-white bg-clip-text ">
                 {t("brand.name")}
@@ -33,6 +32,7 @@ export const Header: React.FC = () => {
               <p className="text-xs text-slate-400 font-medium">{t("brand.slogan")}</p>
             </div>
           </div>
+            </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-3">

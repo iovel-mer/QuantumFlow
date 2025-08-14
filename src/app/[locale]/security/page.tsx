@@ -29,31 +29,23 @@ export default function SecurityPage() {
   return (
     <>
       <Header />
-      <main className='min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950  text-white relative overflow-hidden'>
-                                  <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none"></div>
+      <main className='min-h-screen pt-10 container mx-auto relative bg-gradient-to-br  from-slate-950 via-slate-900 to-slate-950 overflow-hidden'>
+         <div className='p-20'>
+            <Link 
+              href="/" 
+              className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20   text-sm font-medium text-white'
+            >
+              <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300' />
+              {t('backToHome')}
+              <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300' />
+            </Link>
+          </div>
+    
 
-        {/* Animated background elements */}
-        <div className='absolute inset-0 overflow-hidden'>
-          <div className='absolute -top-40 -right-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse'></div>
-          <div className='absolute top-1/2 -left-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000'></div>
-          <div className='absolute -bottom-40 right-1/3 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-2000'></div>
-        </div>
-
-        <div className='relative z-10'>
-          {/* Hero Section */}
-          <section className='container mx-auto text-center pt-20 pb-16 px-4 md:px-6'>
+        
+          <section className=' text-center pt-10 pb-16 px-4 md:px-6'>
             <div className='animate-fade-in-up'>
-              {/* Back to Home Link */}
-              <div className='flex justify-start mb-8'>
-                <Link 
-                  href="/" 
-                  className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group text-sm font-medium text-white'
-                >
-                  <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300' />
-                  {t('backToHome')}
-                  <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300' />
-                </Link>
-              </div>
+             
 
               <div className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8'>
                 <ShieldCheck className='h-5 w-5 text-green-400 mr-2' />
@@ -262,7 +254,7 @@ export default function SecurityPage() {
           </section>
 
           
-        </div>
+        
       </main>
    
       

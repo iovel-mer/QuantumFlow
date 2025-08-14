@@ -73,21 +73,8 @@ const Page = () => {
   return (
     <>
       <Header />
-      <main className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 relative px-4 py-16 sm:px-6 lg:px-8 mx-auto min-h-screen overflow-hidden text-white">
-        {/* Grid Background */}
-        <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none"></div>
-
-        {/* Background Blur Effects */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-gradient-to-br from-pink-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
-
-        {/* Page Content */}
-        <div className="relative z-10 max-w-7xl mx-auto">
-          {/* Hero Section */}
-          <section className="text-center mb-20">
-            {/* Back to Home Link */}
-            <div className='flex justify-start mb-8'>
+      <main className="min-h-screen pt-6 sm:pt-8 md:pt-10 container mx-auto px-4 relative bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+            <div className='p-20'>
               <Link 
                 href="/" 
                 className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group text-sm font-medium text-white'
@@ -97,6 +84,12 @@ const Page = () => {
                 <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300' />
               </Link>
             </div>
+       
+      
+        <div className="relative z-10 max-w-7xl mx-auto">
+          {/* Hero Section */}
+          <section className="text-center mb-20">
+            {/* Back to Home Link */}
           </section>
 
           {/* Help Categories Section */}

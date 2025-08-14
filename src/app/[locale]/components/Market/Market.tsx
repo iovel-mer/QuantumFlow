@@ -93,7 +93,7 @@ export const Market: React.FC = () => {
   }
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white min-h-screen relative overflow-hidden">
+    <section className="py-30  container mx-auto bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white  relative overflow-hidden">
             <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none"></div>
 
       <div
@@ -142,10 +142,10 @@ export const Market: React.FC = () => {
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
                 <div className="relative z-10">
                   <div className="flex items-start justify-between mb-6">
-                    <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-2">
                       <CryptoLogo coin={coin} size={48} />
                       <div>
-                        <h4 className="font-bold text-lg text-white">{coin.name}</h4>
+                        <h4 className="font-bold text-lg text-white ">{coin.name}</h4>
                         <p className="text-white/60 text-sm font-medium uppercase tracking-wider">{coin.symbol}</p>
                       </div>
                     </div>

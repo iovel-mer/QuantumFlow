@@ -522,36 +522,7 @@
     "backToHome": "Zurück zur Startseite",
     "lastUpdated": "Zuletzt aktualisiert: Januar 2024"
   },
-  "cookiePolicy": {
-  "title": "Cookie-Richtlinie",
-  "whatAreCookies": {
-    "title": "1. Was sind Cookies",
-    "content": "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie unsere Website besuchen. Sie helfen uns, Ihnen eine bessere Erfahrung zu bieten."
-  },
-  "typesOfCookies": {
-    "title": "2. Arten von Cookies, die wir verwenden",
-    "essential": "Essenzielle Cookies: Erforderlich, damit die Website ordnungsgemäß funktioniert, einschließlich Authentifizierungs- und Sicherheitsfunktionen.",
-    "analytics": "Analyse-Cookies: Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, indem sie anonyme Informationen sammeln.",
-    "functional": "Funktionale Cookies: Ermöglichen erweiterte Funktionen und Personalisierung, wie das Merken Ihrer Präferenzen.",
-    "marketing": "Marketing-Cookies: Werden verwendet, um Besucher über Websites hinweg zu verfolgen und relevante Werbung anzuzeigen."
-  },
-  "thirdPartyCookies": {
-    "title": "3. Cookies von Drittanbietern",
-    "content": "Wir können Dienste von Drittanbietern nutzen, die Cookies auf Ihrem Gerät setzen, einschließlich Google Analytics und Werbepartner."
-  },
-  "managingCookies": {
-    "title": "4. Verwaltung von Cookies",
-    "content": "Sie können Cookies über Ihre Browsereinstellungen kontrollieren. Das Deaktivieren bestimmter Cookies kann jedoch die Funktionalität der Website beeinträchtigen."
-  },
-  "cookieConsent": {
-    "title": "5. Cookie-Einwilligung",
-    "content": "Durch die weitere Nutzung unserer Website stimmen Sie der Verwendung von Cookies gemäß dieser Richtlinie zu."
-  },
-  "updates": {
-    "title": "6. Aktualisierungen dieser Richtlinie",
-    "content": "Wir können diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Datum veröffentlicht."
-  }
-},
+
 "termsOfService": {
   "title": "Nutzungsbedingungen",
   "acceptance": {
@@ -911,7 +882,7 @@
   },
 
   "Cookie": {
-    "backToHome": "← Zurück zur Startseite",
+    "backToHome": "Zurück zur Startseite",
     "title": "Cookie-Nutzungshinweis",
     "description": "Erfahren Sie, wie wir Cookies verwenden, um Ihre Erfahrung zu optimieren, Inhalte zu personalisieren und Traffic zu analysieren.",
     "section1": {

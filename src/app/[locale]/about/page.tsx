@@ -5,28 +5,26 @@ import { Header } from "../components/Header/Header";
 import { useTranslations } from "next-intl";
 import { Home, ArrowRight } from 'lucide-react';
 
-const Page = () => {
+export default function AboutPage() {
   const t = useTranslations("about");
 
   return (
     <>
       <Header />
-      <section className="min-h-screen relative bg-gradient-to-br  from-slate-950 via-slate-900 to-slate-950 pt-0">
-        <div className="absolute inset-0 z-0  bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
-         
-        {/* HERO SECTION */}
-        <section className="py-20 md:py-28 text-center px-6 md:px-10 max-w-5xl mx-auto">
-          {/* Back to Home Link */}
-          <div className='flex justify-start mb-8'>
+      <section className="min-h-screen container mx-auto relative bg-gradient-to-br  from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+        <div className='p-20'>
             <Link 
               href="/" 
-              className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group text-sm font-medium text-white'
+              className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20   text-sm font-medium text-white'
             >
               <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300' />
               {t('backToHome')}
               <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300' />
             </Link>
           </div>
+         
+       
+        <section className="py-20 md:py-28 text-center px-6 md:px-10 max-w-5xl mx-auto">
 
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             {t("title")}
@@ -36,7 +34,7 @@ const Page = () => {
           </p>
         </section>
 
-        {/* HIGHLIGHTS */}
+       
         <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 px-6 md:px-10 max-w-6xl mx-auto pb-20">
           <div className=" p-6 rounded-2xl shadow border border-blue-100">
             <h2 className="text-2xl font-semibold mb-3 text-white">
@@ -93,4 +91,3 @@ const Page = () => {
   );
 };
 
-export default Page;

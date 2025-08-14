@@ -28,11 +28,30 @@ import { Header } from "../components/Header/Header";
 const ContactPage = () => {
   const t = useTranslations("contact");
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
   const router = useRouter();
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
+
+  const isFormValid = formData.name.trim() !== "" && 
+                     formData.email.trim() !== "" && 
+                     formData.subject.trim() !== "" && 
+                     formData.message.trim() !== "";
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSuccessMessage("✅ Message sent successfully!");
+    if (!isFormValid) return;
+   
     setTimeout(() => {
       router.push("/");
     }, 2000);
@@ -62,127 +81,127 @@ const ContactPage = () => {
   return (
     <>
       <Header />
-      <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 relative">
-        <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none"></div>
-
-        <div className="max-w-5xl mx-auto">
-          {/* Back to Home Link */}
-          <div className='flex justify-start mb-8'>
-            <Link 
-              href="/" 
-              className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group text-sm font-medium text-white'
-            >
-              <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300' />
-              {t('backToHome')}
-              <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300' />
-            </Link>
-          </div>
-
-          <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-              {t("title")}
-            </h1>
-            <p className="text-lg text-white">{t("subtitle")}</p>
-          </div>
+      <div className="min-h-screen pt-6 sm:pt-8 md:pt-10 container mx-auto px-4 relative bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+        <div className='p-4 mb-10 sm:p-8 md:p-12 lg:p-20'>
+          <Link 
+            href="/" 
+            className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group text-sm font-medium text-white'
+          >
+            <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300' />
+            {t('backToHome')}
+            <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300' />
+          </Link>
         </div>
 
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-4">
+            {t("title")}
+          </h1>
+          <p className="text-base sm:text-lg text-white/80">{t("subtitle")}</p>
+        </div>
+        
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
-            <div className="space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 mb-12 sm:mb-16 md:mb-20">
+            <div className="space-y-4 sm:space-y-6">
               {contactOptions.map((item, index) => (
-                <Card key={index}>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-xl">
-                      <item.icon className="h-5 w-5 text-indigo-600" />
+                <Card key={index} className="bg-white/5 backdrop-blur-sm border border-white/10">
+                  <CardHeader className="pb-3 sm:pb-4">
+                    <CardTitle className="flex items-center gap-2 text-lg sm:text-xl text-white">
+                      <item.icon className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                       {item.title}
                     </CardTitle>
-                    <CardDescription>{item.description}</CardDescription>
+                    <CardDescription className="text-white/70 text-sm sm:text-base">{item.description}</CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-2 text-sm text-gray-700">
-                    <p className="text-gray-500 flex items-center gap-2">
-                      <Clock className="h-4 w-4" /> {item.hours}
+                  <CardContent className="space-y-2 text-sm text-white/60 pt-0">
+                    <p className="flex items-center gap-2">
+                      <Clock className="h-3 w-3 sm:h-4 sm:w-4" /> {item.hours}
                     </p>
                   </CardContent>
                 </Card>
               ))}
             </div>
 
-            <Card className="h-fit shadow-md border">
-              <CardHeader>
-                <CardTitle className="text-2xl text-white font-semibold">
+            <Card className="h-fit shadow-xl border border-white/10 bg-white/5 backdrop-blur-sm">
+              <CardHeader className="pb-4 sm:pb-6">
+                <CardTitle className="text-xl sm:text-2xl text-white font-semibold">
                   {t("form.title")}
                 </CardTitle>
-                <CardDescription className="text-white">
+                <CardDescription className="text-white/70 text-sm sm:text-base">
                   {t("form.description")}
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
                   <div className="grid gap-2">
-                    <Label htmlFor="name">{t("form.name")}</Label>
+                    <Label htmlFor="name" className="text-white text-sm sm:text-base">{t("form.name")}</Label>
                     <Input
-                      className="text-white"
+                      className="text-white bg-white/10 border-white/20 placeholder:text-white/50"
                       id="name"
                       name="name"
                       placeholder="John Doe"
+                      value={formData.name}
+                      onChange={(e) => handleInputChange("name", e.target.value)}
                     />
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="email">{t("form.email")}</Label>
+                    <Label htmlFor="email" className="text-white text-sm sm:text-base">{t("form.email")}</Label>
                     <Input
-                      className="text-white"
+                      className="text-white bg-white/10 border-white/20 placeholder:text-white/50"
                       id="email"
                       name="email"
                       type="email"
                       placeholder="you@example.com"
+                      value={formData.email}
+                      onChange={(e) => handleInputChange("email", e.target.value)}
                     />
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="subject">{t("form.subject")}</Label>
-                    <Select name="subject">
-                      <SelectTrigger className="text-white" id="subject">
+                    <Label htmlFor="subject" className="text-white text-sm sm:text-base">{t("form.subject")}</Label>
+                    <Select name="subject" value={formData.subject} onValueChange={(value) => handleInputChange("subject", value)}>
+                      <SelectTrigger className="text-white bg-white/10 border-white/20" id="subject">
                         <SelectValue placeholder={t("form.placeholder")} />
                       </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="general">
+                      <SelectContent className="bg-slate-900 border-white/20">
+                        <SelectItem value="general" className="text-white hover:bg-white/10">
                           {t("form.options.general")}
                         </SelectItem>
-                        <SelectItem value="technical">
+                        <SelectItem value="technical" className="text-white hover:bg-white/10">
                           {t("form.options.technical")}
                         </SelectItem>
-                        <SelectItem value="billing">
+                        <SelectItem value="billing" className="text-white hover:bg-white/10">
                           {t("form.options.billing")}
                         </SelectItem>
-                        <SelectItem value="partnership">
+                        <SelectItem value="partnership" className="text-white hover:bg-white/10">
                           {t("form.options.partnership")}
                         </SelectItem>
-                        <SelectItem value="other">
+                        <SelectItem value="other" className="text-white hover:bg-white/10">
                           {t("form.options.other")}
                         </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="message">{t("form.message")}</Label>
+                    <Label htmlFor="message" className="text-white text-sm sm:text-base">{t("form.message")}</Label>
                     <Textarea
                       id="message"
                       name="message"
                       placeholder={t("form.placeholderMessage")}
-                      className="min-h-[120px] text-white"
+                      className="min-h-[100px] sm:min-h-[120px] text-white bg-white/10 border-white/20 placeholder:text-white/50"
+                      value={formData.message}
+                      onChange={(e) => handleInputChange("message", e.target.value)}
                     />
                   </div>
                   <Button
                     type="submit"
-                    className="w-full text-base font-medium bg-black text-white hover:bg-black"
+                    disabled={!isFormValid}
+                    className={`w-full text-sm sm:text-base font-medium transition-all duration-300 ${
+                      isFormValid 
+                        ? "bg-white text-black hover:bg-white/90 cursor-pointer" 
+                        : "bg-white/20 text-white/50 cursor-not-allowed"
+                    }`}
                   >
                     {t("form.button")}
                   </Button>
-
-                  {successMessage && (
-                    <p className="text-green-400 text-sm text-center mt-4">
-                      {successMessage}
-                    </p>
-                  )}
                 </form>
               </CardContent>
             </Card>
