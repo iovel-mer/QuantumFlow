@@ -1175,45 +1175,7 @@
   },
 
 
-"Terms": {
-  "title": "Términos del Servicio",
-  "backToHome": "Volver al Inicio",
-  "lastUpdated": "Última actualización: Julio 2025",
-  "sections": {
-    "1": {
-      "title": "1. Aceptación de los Términos",
-      "content": "Al acceder y utilizar nuestro servicio, aceptas y acuerdas estar sujeto a los términos..."
-    },
-    "2": {
-      "title": "2. Descripción del Servicio",
-      "content": "Nuestro servicio proporciona una plataforma integral para gestionar tus proyectos..."
-    },
-    "3": {
-      "title": "3. Seguridad de la Cuenta",
-      "content": "Eres el único responsable de mantener la confidencialidad de tu cuenta..."
-    },
-    "4": {
-      "title": "4. Conducta del Usuario",
-      "content": "Aceptas utilizar nuestro servicio solo para fines legales y de una manera que no infrinja..."
-    },
-    "5": {
-      "title": "5. Tarifas y Pagos",
-      "content": "Si corresponde, las tarifas por utilizar ciertas funciones premium de nuestro servicio se detallan..."
-    },
-    "6": {
-      "title": "6. Propiedad Intelectual",
-      "content": "Todo el contenido, marcas registradas, logotipos y datos en nuestro servicio están protegidos..."
-    },
-    "7": {
-      "title": "7. Limitación de Responsabilidad",
-      "content": "Nuestro servicio no será responsable por ningún daño indirecto, incidental, especial o consecuente..."
-    },
-    "8": {
-      "title": "8. Terminación",
-      "content": "Nos reservamos el derecho de terminar o suspender tu cuenta y el acceso a nuestro servicio..."
-    }
-  }
-},
+
 "privacy": {
   "back": "← Volver al inicio",
   "title": "Política de Privacidad",

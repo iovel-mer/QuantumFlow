@@ -340,7 +340,7 @@
     }
   },
   "terms": {
-    "goBackHome": "Go Back Home",
+    "goBackHome": "Back to Home",
     "title": "Terms & Conditions",
     "lastUpdated": "Last updated",
     "section1": {
@@ -1247,45 +1247,7 @@
     }
   },
 
-  "Terms": {
-    "title": "Terms of Service",
-    "backToHome": "Back to Home",
-    "lastUpdated": "Last updated: July 2025",
-    "sections": {
-      "1": {
-        "title": "1. Acceptance of Terms",
-        "content": "By accessing and using Our Service, you accept and agree to be bound by the terms..."
-      },
-      "2": {
-        "title": "2. Service Description",
-        "content": "Our Service provides a comprehensive platform for managing your projects..."
-      },
-      "3": {
-        "title": "3. Account Security",
-        "content": "You are solely responsible for maintaining the confidentiality of your account..."
-      },
-      "4": {
-        "title": "4. User Conduct",
-        "content": "You agree to use Our Service only for lawful purposes and in a way that does not infringe..."
-      },
-      "5": {
-        "title": "5. Fees and Payments",
-        "content": "If applicable, fees for using certain premium features of Our Service are outlined..."
-      },
-      "6": {
-        "title": "6. Intellectual Property",
-        "content": "All content, trademarks, service marks, logos, and data on Our Service are protected..."
-      },
-      "7": {
-        "title": "7. Limitation of Liability",
-        "content": "Our Service shall not be liable for any indirect, incidental, special, consequential..."
-      },
-      "8": {
-        "title": "8. Termination",
-        "content": "We reserve the right to terminate or suspend your account and access to Our Service..."
-      }
-    }
-  },
+ 
   "privacy": {
     "back": "← Back to Home",
     "title": "Privacy Policy",

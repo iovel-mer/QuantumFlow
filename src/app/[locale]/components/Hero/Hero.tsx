@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
   }
 
   return (
-    <section className="min-h-screen  container mx-auto bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white pt-16 pb-12 relative overflow-hidden">
+    <section className="pb-60 container mx-auto bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white pt-16 relative overflow-hidden">
       <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none"></div>
 
       <div className="absolute inset-0">
@@ -132,8 +132,8 @@ export const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href={`/${locale}/login`} passHref>
-                <Button className="group relative px-8 py-4 bg-gradient-to-r from-violet-500 to-emerald-500 text-white font-semibold text-lg rounded-2xl hover:from-violet-400 hover:to-emerald-400 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-violet-500/25">
+              <Link href={`/${locale}/register`} passHref>
+                <Button className="group cursor-pointer relative px-8 py-4 bg-gradient-to-r from-violet-500 to-emerald-500 text-white font-semibold text-lg rounded-2xl hover:from-violet-400 hover:to-emerald-400 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-violet-500/25">
                   <span className="relative z-10 flex items-center space-x-2">
                     <span>{t("startTrading")}</span>
                     <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -143,26 +143,13 @@ export const Hero: React.FC = () => {
                 </Button>
               </Link>
               <Link href={`/${locale}/register`}  passHref>
-                <Button variant="outline" className="px-8 bg-black py-4 border-2 border-white/20 text-white font-semibold text-lg rounded-2xl hover:bg-white/5 hover:border-white/30 transition-all duration-300 backdrop-blur-xl">
+                <Button variant="outline" className="px-8 bg-black cursor-pointer py-4 border-2 border-white/20 text-white font-semibold text-lg rounded-2xl hover:bg-white/5 hover:border-white/30 transition-all duration-300 backdrop-blur-xl">
                   {t("viewDemo")}
                 </Button>
               </Link>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 pt-8">
-              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all duration-300">
-                <div className="text-3xl font-black text-emerald-400 mb-2">$2.4T</div>
-                <div className="text-xs text-slate-400 uppercase tracking-wider">{t("stats.volume")}</div>
-              </div>
-              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all duration-300">
-                <div className="text-3xl font-black text-violet-400 mb-2">5.7M</div>
-                <div className="text-xs text-slate-400 uppercase tracking-wider">{t("stats.traders")}</div>
-              </div>
-              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all duration-300">
-                <div className="text-3xl font-black text-teal-400 mb-2">0.08%</div>
-                <div className="text-xs text-slate-400 uppercase tracking-wider">{t("stats.fees")}</div>
-              </div>
-            </div>
+            
           </div>
 
           <div className="lg:col-span-5">

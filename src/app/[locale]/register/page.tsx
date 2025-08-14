@@ -415,7 +415,7 @@ export default function RegisterPage() {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 disabled:from-gray-600 disabled:to-gray-700 text-white font-semibold py-3 rounded-lg transition-all duration-200"
+                className="w-full bg-blue-500 hover:bg-blue-500 cursor-pointer disabled:from-gray-600 disabled:to-gray-700 text-white font-semibold py-3 rounded-lg transition-all duration-200"
               >
                 {isLoading ? (
                   <div className="flex items-center justify-center">
@@ -429,7 +429,7 @@ export default function RegisterPage() {
             </form>
             <p className="text-center text-gray-400 mt-4">
               {t("alreadyHaveAccount")}{" "}
-              <Link href="/login" className="text-purple-400 hover:text-purple-300 font-medium">
+              <Link href="/login" className="text-blue-500 hover:blue-500 font-medium">
                 {t("signIn")}
               </Link>
             </p>
@@ -448,7 +448,7 @@ export default function RegisterPage() {
           <div className="space-y-6">
             {[t("benefit1"), t("benefit2"), t("benefit3"), t("benefit4")].map((benefit, idx) => (
               <div key={idx} className="flex items-start space-x-3">
-                <div className="flex-shrink-0 w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mt-0.5 shadow-md">
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mt-0.5 shadow-md">
                   <Check className="w-4 h-4 text-white" />
                 </div>
                 <p className="text-gray-300 leading-relaxed text-lg">{benefit}</p>
@@ -458,15 +458,15 @@ export default function RegisterPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-gray-700 mt-8">
             <div className="text-center">
               <p className="text-gray-400 text-sm mb-1">{t("totalTradingVolume")}</p>
-              <p className="text-3xl font-bold text-purple-400">$2.8B+</p>
+              <p className="text-3xl font-bold text-blue-500">$2.8B+</p>
             </div>
             <div className="text-center">
               <p className="text-gray-400 text-sm mb-1">{t("activeTraders")}</p>
-              <p className="text-3xl font-bold text-purple-400">500K+</p>
+              <p className="text-3xl font-bold text-blue-500">500K+</p>
             </div>
             <div className="text-center">
               <p className="text-gray-400 text-sm mb-1">{t("countries")}</p>
-              <p className="text-3xl font-bold text-purple-400">180+</p>
+              <p className="text-3xl font-bold text-blue-500">180+</p>
             </div>
           </div>
         </div>

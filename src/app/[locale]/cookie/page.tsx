@@ -17,7 +17,7 @@ export default function CookiePage() {
         <div className='p-4 sm:p-8 md:p-12 lg:p-20'>
           <Link 
             href="/" 
-            className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group text-sm font-medium text-white'
+            className='inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20  text-sm font-medium text-white'
           >
             <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300' />
             {t('backToHome')}

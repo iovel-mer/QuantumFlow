@@ -1177,47 +1177,6 @@
 },
 
 
-
-"Terms": {
-  "title": "Nutzungsbedingungen",
-  "backToHome": "Zurück zur Startseite",
-  "lastUpdated": "Zuletzt aktualisiert: Juli 2025",
-  "sections": {
-    "1": {
-      "title": "1. Akzeptanz der Bedingungen",
-      "content": "Durch die Nutzung unseres Dienstes akzeptieren Sie die folgenden Bedingungen..."
-    },
-    "2": {
-      "title": "2. Leistungsbeschreibung",
-      "content": "Unser Dienst bietet eine umfassende Plattform zur Verwaltung Ihrer Projekte..."
-    },
-    "3": {
-      "title": "3. Kontosicherheit",
-      "content": "Sie sind allein verantwortlich für die Geheimhaltung Ihrer Kontodaten..."
-    },
-    "4": {
-      "title": "4. Nutzerverhalten",
-      "content": "Sie stimmen zu, unseren Dienst nur für rechtmäßige Zwecke zu nutzen und keine Rechte Dritter zu verletzen..."
-    },
-    "5": {
-      "title": "5. Gebühren und Zahlungen",
-      "content": "Sofern zutreffend, sind Gebühren für Premium-Funktionen unseres Dienstes angegeben..."
-    },
-    "6": {
-      "title": "6. Geistiges Eigentum",
-      "content": "Alle Inhalte, Marken, Logos und Daten unseres Dienstes sind geschützt..."
-    },
-    "7": {
-      "title": "7. Haftungsbeschränkung",
-      "content": "Unser Dienst haftet nicht für indirekte, zufällige oder Folgeschäden..."
-    },
-    "8": {
-      "title": "8. Kündigung",
-      "content": "Wir behalten uns das Recht vor, Ihr Konto und den Zugriff auf unseren Dienst zu sperren oder zu beenden..."
-    }
-  }
-},
-
 "privacy": {
   "back": "← Zurück zur Startseite",
   "title": "Datenschutzerklärung",
