@@ -19,7 +19,7 @@ const page = () => {
         <div className='p-4 sm:p-8 md:p-12 lg:p-20'>
           <Link
             href={`/${locale}`}
-            className='inline-flex items-center px-3 py-2 sm:px-4 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 group text-xs sm:text-sm font-medium text-white'
+            className='inline-flex items-center px-3 py-2 sm:px-4 bg-white/10 backdrop-blur-sm rounded-full border border-white/20  text-xs sm:text-sm font-medium text-white'
           >
             <Home className='h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2 group-hover:-translate-x-1 transition-transform duration-300' />
             {t('backToHome')}
