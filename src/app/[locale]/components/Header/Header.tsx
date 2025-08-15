@@ -87,37 +87,19 @@ export const Header: React.FC = () => {
             </button>
           </div>
 
-          {/* Mobile Menu Button - Full Width */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="w-full p-3 text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/20 rounded-lg transition-all duration-300 bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/20 flex items-center justify-center gap-2 font-medium"
-            aria-label="Toggle Menu"
-          >
-            {isMenuOpen ? (
-              <>
-                <X className="w-5 h-5" />
-                <span>Close Menu</span>
-              </>
-            ) : (
-              <>
-                <Menu className="w-5 h-5" />
-                <span>Open Menu</span>
-              </>
-            )}
-          </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 space-y-3 flex flex-col">
             <Link href={`/${locale}/login`} onClick={() => setIsMenuOpen(false)}>
-              <Button className="w-full justify-start gap-2 text-sm font-semibold bg-slate-700 text-white hover:bg-slate-600 py-3">
+              <Button className="w-full text-center  gap-2 text-sm font-semibold bg-slate-700 text-white hover:bg-slate-600 py-3">
                 <LogIn size={16} />
                 {t("signIn")}
               </Button>
             </Link>
             <Link href={`/${locale}/register`} onClick={() => setIsMenuOpen(false)}>
-              <Button className="w-full justify-start gap-2 text-sm font-semibold bg-blue-500 text-white hover:bg-blue-600 py-3">
+              <Button className="w-full text-center gap-2 text-sm font-semibold bg-blue-500 text-white hover:bg-blue-600 py-3">
                 <UserPlus size={16} />
                 {t("getStarted")}
               </Button>

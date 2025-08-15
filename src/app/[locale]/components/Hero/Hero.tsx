@@ -217,8 +217,8 @@ export const Hero: React.FC = () => {
                             <div className="text-white font-bold text-xl mb-1">{formatPrice(coin.price)}</div>
                             <div className={`text-sm font-semibold px-3 py-1 rounded-full ${
                               coin.change >= 0
-                                ? "text-emerald-400 bg-emerald-500/20"
-                                : "text-red-400 bg-red-500/20"
+                                ? "text-emerald-400 "
+                                : "text-red-400"
                             }`}>
                               {coin.change >= 0 ? "+" : ""}
                               {coin.change.toFixed(2)}%

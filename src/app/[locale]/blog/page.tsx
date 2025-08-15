@@ -23,7 +23,7 @@ const Page = () => {
     { id: "overview", title: t("overview.title"), icon: BookOpen },
     { id: "quickStart", title: t("quickStart.title"), icon: Zap },
     { id: "authentication", title: t("authentication.title"), icon: Shield },
-    { id: "faq", title: t("faq.title"), icon: HelpCircle },
+   
   ];
 
   const scrollToSection = (id: string) => {
@@ -78,7 +78,7 @@ const Page = () => {
             <article className="prose prose-lg prose-gray max-w-none dark:prose-invert">
               {/* Overview */}
               <section id="overview">
-                <Card className="bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
+                <Card className="bg-white/5 backdrop-blur-sm border mb-4 border-white/10 hover:bg-white/10 transition-all duration-300">
                   <CardContent className="p-4 sm:p-6 lg:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
                       <div className="p-2 sm:p-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg sm:rounded-xl">
@@ -100,7 +100,7 @@ const Page = () => {
                 const IconComponent = section.icon;
                 return (
                   <section key={section.id} id={section.id}>
-                    <Card className="bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
+                    <Card className="bg-white/5 backdrop-blur-sm border mb-4 border-white/10 hover:bg-white/10 transition-all duration-300">
                       <CardContent className="p-4 sm:p-6 lg:p-8">
                         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
                           <div className="p-2 sm:p-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg sm:rounded-xl">
