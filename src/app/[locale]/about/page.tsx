@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <section className="min-h-screen container mx-auto relative bg-gradient-to-br  from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+      <section className="min-h-screen  mx-auto relative bg-gradient-to-br  from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
         <div className='p-20'>
             <Link 
               href="/" 

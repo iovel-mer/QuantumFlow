@@ -35,7 +35,7 @@ export default function Footer() {
 
   return (
     
-      <footer className='py-20 px-6  container mx-auto border-t border-gray-800 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 relative text-white'>
+      <footer className='py-20 px-6   mx-auto border-t border-gray-800 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 relative text-white'>
                 <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none"></div>
 
         <div className='container mx-auto '>

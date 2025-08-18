@@ -29,7 +29,7 @@ export default function SecurityPage() {
   return (
     <>
       <Header />
-      <main className='min-h-screen pt-10 container mx-auto relative bg-gradient-to-br  from-slate-950 via-slate-900 to-slate-950 overflow-hidden'>
+      <main className='min-h-screen pt-10  mx-auto relative bg-gradient-to-br  from-slate-950 via-slate-900 to-slate-950 overflow-hidden'>
          <div className='p-20'>
             <Link 
               href="/" 
