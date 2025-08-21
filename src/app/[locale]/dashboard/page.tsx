@@ -1,6 +1,6 @@
 'use client';
-
 import type React from 'react';
+export const dynamic = 'force-dynamic';
 
 import { useEffect, useState } from 'react';
 import { DashboardLayout } from '@/components/dashboard-layout';

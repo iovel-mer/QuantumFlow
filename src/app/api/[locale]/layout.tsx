@@ -4,9 +4,10 @@ import { notFound } from 'next/navigation';
 import { getMessages } from 'next-intl/server';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
-import { UserProvider } from '@/app/[locale]/dashboard/context/user-context';
+
 import { Toaster } from '@/components/ui/sonner';
-import '../globals.css';
+import { UserProvider } from '@/app/[locale]/dashboard/context/user-context';
+// import '../globals.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',

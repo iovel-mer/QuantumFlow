@@ -28,7 +28,6 @@ import type {
   CurrencyBreakdown,
 } from '@/app/api/types/wallet-summary';
 import type { TradingAccountDto } from '@/app/api/types/trading';
-import { useUser } from './context/user-context';
 import { AuthConfirmer } from '../components/authConfirmer';
 import { useTranslations } from 'next-intl';
 
@@ -38,6 +37,7 @@ import { BnbIcon } from '@/components/ui/Icons/BnbIcon';
 import { UsdcIcon } from '@/components/ui/Icons/UsdcIcon';
 import { UsdtIcon } from '@/components/ui/Icons/UsdtIcon';
 import { XrpIcon } from '@/components/ui/Icons/XrpIcon';
+import { useUser } from '@/app/[locale]/dashboard/context/user-context';
 
 interface DashboardData {
   walletSummary: WalletSummaryResponse | null;
