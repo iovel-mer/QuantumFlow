@@ -91,7 +91,7 @@ export const Market: React.FC = () => {
   }
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-30  mx-auto bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-30  mx-auto bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white relative overflow-hidden">
       <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:15px_15px] sm:bg-[size:20px_20px] pointer-events-none"></div>
 
       <div
