@@ -29,6 +29,7 @@ import type {
   TicketDto,
 } from '@/app/api/types/trading';
 import { useTranslations } from 'next-intl';
+import { postLogout } from '@/app/api/auth/postLogout';
 
 interface FinanceData {
   tradingAccounts: TradingAccountDto[];
@@ -211,20 +212,7 @@ export default function FinancePage() {
   }
 
   if (error) {
-    return (
-      <DashboardLayout>
-        <div className='flex items-center justify-center min-h-[400px]'>
-          <div className='text-center'>
-            <AlertCircle className='h-12 w-12 text-red-500 mx-auto mb-4' />
-            <h2 className='text-xl font-semibold mb-2'>
-              Error Loading Finance Data
-            </h2>
-            <p className='text-muted-foreground mb-4'>{error}</p>
-            <Button onClick={fetchFinanceData}>Retry</Button>
-          </div>
-        </div>
-      </DashboardLayout>
-    );
+   postLogout()
   }
 
   return (

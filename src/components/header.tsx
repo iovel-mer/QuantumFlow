@@ -64,6 +64,7 @@ export function Header({ className }: HeaderProps) {
     if (loading) return 'Loading...';
     return user?.email || 'No email';
   };
+  if(error) postLogout()
 
   return (
     <header className={className}>
